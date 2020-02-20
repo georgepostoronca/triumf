@@ -1,0 +1,48 @@
+// Colors
+$orange: #FDB15D;
+$black: #382817;
+$gray: #F2ECE4;
+$gray-text: #A8A199;
+$bg-orange: #FCEFDE;
+$btn-orange: #EA973C;
+
+@import "include/bootstrap-reboot.scss";
+@import "include/bootstrap-grid.min.scss";
+
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+    color: $black;
+
+    @media(max-width: 768px) {
+        font-size: 35px;
+        line-height: 40px;
+    } 
+
+    @media(max-width: 580px) {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+a {
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+
+
+@import "block/contact.scss";
+@import "block/footer.scss";
