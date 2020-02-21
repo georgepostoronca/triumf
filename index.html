@@ -66,12 +66,42 @@
         <div class="container">
           <div class="row">
             <div class="clo-12 col-sm-12 col-lg-7">
-              <h1>Получить бесплатную консультацию</h1>
-              <p>Вы можете ввести необходимые параметры материалов, с вами свяжется менеджер и назовет стоимость, проконсультирует по интересующим вопросам</p>
-              
-              <button class="btn btn--bg">
-                <span>Просчитать стоимость</span>
-              </button>
+
+              <form action="" class="form-validation">
+
+                <h1>Получить бесплатную консультацию</h1>
+
+                <div class="block-radio">
+                  <input type="radio" name="type-user" id="input-fiz-user" required>
+                  <label for="input-fiz-user">
+                    <span>Физическое лицо</span>
+                  </label>
+                </div>
+
+                <div class="block-radio">
+                  <input type="radio" name="type-user" id="input-iur-user" required>
+                  <label for="input-iur-user">
+                    <span>Юридическое лицо</span>
+                  </label>
+                </div>
+
+                <input type="text" name="name" placeholder="Представьтесь" required>
+
+                <input type="phone" name="phone" placeholder="Телефон" required>
+
+                <div class="block-check">
+                  <input type="checkbox" name="personal-data" id="inut-personal-data" required>
+                  <label for="inut-personal-data">
+                    <span>Нажимая на кнопку «Задать вопрос», я даю согласие <br> на обработку персональных данных.</span>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn--bg">
+                 <span>Задать вопрос</span>
+                </button>
+
+              </form>
+
             </div>
           </div>
         </div>
@@ -150,5 +180,8 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="js/main.js"></script>
   </body>
 </html>

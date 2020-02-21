@@ -6,6 +6,31 @@
     position: relative;
     overflow: hidden;
 
+
+    &#{&}--form {
+        h1 {
+            margin-bottom: 41px;
+        }
+
+        .block-radio {
+            margin-right: 69px;
+            margin-bottom: 9px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        input {
+            margin-bottom: 25px;
+        }
+        
+        .block-check {
+            margin-top: 8px;
+            margin-bottom: 25px;
+        }
+    }
+
     &:after {
         content: "";
         width: 100%;

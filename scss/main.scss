@@ -129,6 +129,132 @@ p {
     }
 }
 
+// Form
+input[type="text"], input[type="phone"], input[type="number"], input[type="email"] {
+    width: 100%;
+    height: 62px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #D5964F;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: $black;
+
+    outline: none;
+
+    &::placeholder {
+        color: #B07B3F;
+    }
+
+    &.error {
+        border-color: #EB5757;
+        color: #EB5757;
+
+        &::placeholder {
+            color: #EB5757;
+        }
+    }
+}
+
+.block-radio {
+    display: inline-block;
+    input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+
+        &:checked {
+            & + label {
+                &:before {
+                    background-color: $black;
+                }
+            }
+        }
+
+        &.error {
+            & + label {
+                &:before {
+                    background-color: #EB5757;
+                }
+            }
+        }
+    }
+    label {
+        display: inline-flex;
+        align-items: center;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: transparent;
+            transition: .2s;
+            
+            box-shadow: 0 0 0 4px #FDB15D, 0 0 0 5px #D5964F;
+        }
+        
+        span {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left: 14px;
+        }
+    }
+}
+
+.block-check {
+    input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+
+        &:checked {
+            & + label {
+                &:before {
+                    background: $black url("../svg/checked-white.svg") center center no-repeat;
+                    background-size: 8px 6px;
+                }
+            }
+        }
+
+        &.error {
+            & + label {
+                &:before {
+                    border-color: #EB5757;
+                    background-color: #EB5757;
+                }
+            }
+        }
+    }
+
+    label {
+        display: inline-flex;
+    
+        &:before {
+            width: 20px;
+            height: 20px;
+            content: "";
+            display: block;
+            border: 1px solid #D5964F;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-top: 2px;
+            transition: background-color .2s;
+        }
+
+        span {
+            font-size: 14px;
+            line-height: 24px;
+            margin-left: 9px;
+        }   
+    }
+}
 
 @import "block/contact.scss";
 @import "block/footer.scss";
