@@ -43,6 +43,93 @@ a {
     }
 }
 
+p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+
+    @media(max-width: 580px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.btn {
+    border-radius: 24px;
+    outline: none;
+    border: 0;
+    background-color: $orange;
+    display: inline-block;
+    display: inline-block;
+    cursor: pointer;
+    transition: .2s;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $black;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    &#{&}--border {
+        border: 1px solid #EA973C;
+        background-color: transparent;
+
+        span {
+            color: $orange;
+        }
+
+        &:hover {
+            border-color: $black;
+            background-color: transparent;
+
+            span {
+                color: $black;
+            }
+        }
+    }
+
+    &#{&}--bg {
+        background: $black;
+        
+        span {
+            color: #fff;
+        }
+
+        &:hover {
+            background: #fff;
+
+            span {
+                color: $black;
+            }
+        }
+    }
+
+    span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black;
+        padding: 16px 42px;
+        display: inline-block;
+        text-align: center;
+        outline: none;
+        transition: .2s;
+
+        @media(max-width: 580px) {
+            padding: 12px 20px;
+        }
+    }
+}
+
 
 @import "block/contact.scss";
 @import "block/footer.scss";
+@import "block/calcmatarial.scss";

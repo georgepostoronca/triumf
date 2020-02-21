@@ -1,0 +1,52 @@
+.calcmatarial {
+    padding-top: 88px;
+    padding-bottom: 100px;
+    
+    background-color: $orange;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+
+        background: url("../ico/board-line.svg") right center no-repeat;
+        background-size: auto 100%;
+
+        @media(max-width: 1200px) {
+            opacity: .2;
+        }
+
+        @media(max-width: 580px) {
+            opacity: .1;
+        }
+    }
+
+    @media(max-width: 1080px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 30px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+}
