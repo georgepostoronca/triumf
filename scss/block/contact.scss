@@ -92,6 +92,11 @@
             @media(max-width: 768px) {
                 line-height: 25px;
             }
+            
+            @media(max-width: 580px) {
+                font-size: 16px;
+                line-height: 23px;
+            }
         }
 
         p {
@@ -103,6 +108,11 @@
 
             @media(max-width: 768px) {
                 line-height: 25px;
+            }
+
+            @media(max-width: 580px) {
+                font-size: 14px;
+                line-height: 18px;
             }
         }
     }
