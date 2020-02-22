@@ -1,7 +1,14 @@
+globalThis === (function() {
+	return this;
+})();
+
 import $ from 'jquery';
 import "jquery-validation";
 import imask from "imask";
-console.log($);
+import svg4everybody from "svg4everybody";
+
+// SVG Old IE
+svg4everybody();
 
 // Mask Phone
 var element = document.querySelector('input[type="phone"');
