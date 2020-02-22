@@ -29,7 +29,7 @@ h1 {
     } 
 
     @media(max-width: 580px) {
-        font-size: 25px;
+        font-size: 24px;
         line-height: 28px;
     }
 }
@@ -64,6 +64,7 @@ p {
     cursor: pointer;
     transition: .2s;
     padding: 0;
+    box-sizing: border-box;
 
     &:focus {
         outline: none;
@@ -111,6 +112,40 @@ p {
         }
     }
 
+    &#{&}--white {
+        background-color: #fff;
+
+        span {
+            color: $black;
+        }
+
+
+        &:hover {
+            background-color: $orange;
+
+            span {
+                color: $black;
+            }
+        }
+
+        &.btn--border {
+            background-color: transparent;
+            border-color: #fff;
+
+            span {
+                color: #fff;
+            }
+
+            &:hover {
+                border-color: $orange;
+
+                span {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
     span {
         font-style: normal;
         font-weight: normal;
@@ -144,6 +179,11 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 
     outline: none;
 
+    @media(max-width: 768px) {
+        height: 40px;
+        font-size: 16px;
+    }
+
     &::placeholder {
         color: #B07B3F;
     }
@@ -160,6 +200,7 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 
 .block-radio {
     display: inline-block;
+
     input {
         position: absolute;
         width: 0;
@@ -182,6 +223,7 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
             }
         }
     }
+
     label {
         display: inline-flex;
         align-items: center;
@@ -196,6 +238,11 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
             transition: .2s;
             
             box-shadow: 0 0 0 4px #FDB15D, 0 0 0 5px #D5964F;
+
+            @media(max-width: 768px) {
+                width: 8px;
+                height: 8px;
+            }
         }
         
         span {
@@ -203,6 +250,12 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
             font-size: 18px;
             line-height: 30px;
             margin-left: 14px;
+
+            @media(max-width: 768px) {
+                font-size: 16px;
+                line-height: 20px;
+                margin-left: 12px;
+            }
         }
     }
 }
@@ -246,12 +299,23 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
             border-radius: 3px;
             margin-top: 2px;
             transition: background-color .2s;
+
+            @media(max-width: 768px) {
+                width: 16px;
+                height: 16px;
+                margin-top: 4px;
+            }
         }
 
         span {
             font-size: 14px;
             line-height: 24px;
             margin-left: 9px;
+            width: calc(100% - 20px);
+
+            @media(max-width: 768px) {
+                // margin-left: 5px;
+            }
         }   
     }
 }
@@ -261,3 +325,4 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 @import "block/calcmatarial.scss";
 @import "block/review.scss";
 @import "block/getcatalog.scss";
+@import "block/header.scss";

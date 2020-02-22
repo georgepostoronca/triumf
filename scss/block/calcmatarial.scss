@@ -16,6 +16,10 @@
             margin-right: 69px;
             margin-bottom: 9px;
 
+            @media(max-width: 768px) {
+                margin-bottom: 5px;
+            }
+
             &:last-of-type {
                 margin-right: 0;
             }
@@ -23,11 +27,19 @@
 
         input {
             margin-bottom: 25px;
+
+            @media(max-width: 768px) {
+                margin-bottom: 15px;
+            }
         }
         
         .block-check {
             margin-top: 8px;
             margin-bottom: 25px;
+
+            @media(max-width: 768px) {
+                margin-bottom: 15px;
+            }
         }
     }
 

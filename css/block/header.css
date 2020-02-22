@@ -1,0 +1,25 @@
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.header ul li i {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 100%;
+  margin-right: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.header ul li span {
+  width: calc(100% - 44px);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
