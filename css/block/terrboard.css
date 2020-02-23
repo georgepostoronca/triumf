@@ -1,0 +1,11 @@
+.terrboard__item i {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.terrboard__item span {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}

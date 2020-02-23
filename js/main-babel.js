@@ -1,11 +1,8 @@
-globalThis === (function() {
-	return this;
-})();
-
 import $ from 'jquery';
 import "jquery-validation";
 import imask from "imask";
 import svg4everybody from "svg4everybody";
+import Swiper from 'swiper';
 
 // SVG Old IE
 svg4everybody();
@@ -40,4 +37,38 @@ $.validator.setDefaults({
 
 $(".form-validation").each(function() {
     $(this).validate();
+});
+
+// tooltip
+$(".js__open-tooltip").click(function() {
+	$(".terinfo__item").removeClass("active");
+	$(this).closest(".terinfo__item").addClass("active");
+});
+
+$(".terinfo__tooltip-close").click(function() {
+	$(this).closest(".terinfo__item").removeClass("active");
+});
+
+
+// Slider
+var swiper = new Swiper('.terrslid', {
+	slidesPerView: 2,
+	spaceBetween: 30,
+	pagination: {
+		el: '.terrslid__pagination',
+	},
+	navigation: {
+		nextEl: '.terrslid__next',
+		prevEl: '.terrslid__prev',
+	},
+	breakpoints: {
+        580: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+      }
 });

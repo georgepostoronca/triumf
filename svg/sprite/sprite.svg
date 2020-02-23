@@ -140,7 +140,7 @@
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.58 110.58" id="close">
     <title>close</title>
-    <path d="M110.23.35L55.29 55.29m0 0l54.94 54.94M55.29 55.29L.35.35m54.94 54.94L.35 110.23" stroke="#382817"></path>
+    <path d="M110.23.35L55.29 55.29m0 0l54.94 54.94M55.29 55.29L.35.35m54.94 54.94L.35 110.23" ></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.97 126.47" id="comment">
     <title>comment</title>

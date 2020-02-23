@@ -8,6 +8,7 @@ $btn-orange: #EA973C;
 
 @import "include/bootstrap-reboot.scss";
 @import "include/bootstrap-grid.min.scss";
+@import "../node_modules/swiper/css/swiper.min.css";
 
 
 html, body {
@@ -31,6 +32,23 @@ h1 {
     @media(max-width: 580px) {
         font-size: 24px;
         line-height: 28px;
+    }
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 52px;
+
+    @media(max-width: 768px) {
+        font-size: 25px;
+        line-height: 30px;
+    } 
+
+    @media(max-width: 580px) {
+        font-size: 18px;
+        line-height: 24px;
     }
 }
 
@@ -355,9 +373,11 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 
 @import "block/header.scss";
 @import "block/catalog.scss";
+@import "block/terrboard.scss";
 @import "block/contact.scss";
 @import "block/footer.scss";
 @import "block/calcmatarial.scss";
 @import "block/review.scss";
-@import "block/getcatalog.scss";
 @import "block/whytrimf.scss";
+@import "block/getcatalog.scss";
+@import "block/partener.scss";
