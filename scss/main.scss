@@ -9,6 +9,7 @@ $btn-orange: #EA973C;
 @import "include/bootstrap-reboot.scss";
 @import "include/bootstrap-grid.min.scss";
 @import "include/swiper.scss";
+@import "include/fancybox.scss";
 
 
 html, body {
@@ -366,6 +367,25 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 .block-radio {
     display: inline-block;
 
+    &#{&}--light {
+        label {
+            &:before {
+                box-shadow: 0 0 0 4px #FCEFDE, 0 0 0 5px #E5D9CC;
+            }
+        }
+
+        input {
+            &:checked {
+                & + label {
+                    &:before {
+                        background-color: $black;
+                        box-shadow: 0 0 0 4px $orange, 0 0 0 5px $btn-orange;
+                    }
+                }
+            }
+        }
+    }
+
     input {
         position: absolute;
         width: 0;
@@ -426,6 +446,14 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 }
 
 .block-check {
+    &#{&}--orange {
+        label {
+            &:after {
+                border-color: #E5D9CC;
+            }
+        }
+    }
+
     input {
         position: absolute;
         width: 0;
@@ -454,6 +482,7 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 
     label {
         display: inline-flex;
+        user-select: none;
     
         &:before {
             width: 20px;
@@ -483,6 +512,37 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
                 // margin-left: 5px;
             }
         }   
+    }
+}
+
+.input-file {
+    label {
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 0;
+            height: 0;
+            position: absolute;
+            opacity: 0;
+        }
+
+        svg {
+            fill: $orange;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: $orange;
+            position: relative;
+            top: 1px;
+        }
     }
 }
 
@@ -533,3 +593,4 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 @import "block/howwork.scss";
 @import "block/question.scss";
 @import "block/menu.scss";
+@import "block/popup.scss";

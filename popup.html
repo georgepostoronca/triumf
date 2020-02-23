@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Triumf</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet" async>
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+
+    
+
+    <div id="wrapper">
+
+      <menu class="menu">
+        <div class="container">
+          <div class="menu__wrap">
+            <div class="menu__logo">
+              <a href="/">
+                <img src="svg/logo.svg" alt="IMG">
+              </a>
+            </div>
+
+            <div class="menu__info">
+              <div class="menu__contact">
+                <div class="menu__phone">
+                  <div class="menu__phone__wrap">
+                    <span>Продажа террасной доски ДПК</span>
+  
+                    <div>
+                      <a href="tel:+7-929-604-89-52" class="label-phone">
+                        <svg class="icon">
+                          <use xlink:href="svg/sprite/sprite.svg#phone"></use>
+                        </svg>
+                        <span>+7 929 604-89-52</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="menu__btn">
+                  <div class="btn"><span>Обратный звонок</span></div>
+                  <div class="btn btn--border"><span>Просчитать стоимость</span></div>
+                </div>
+              </div>
+
+              <div class="menu__nav">
+                <nav>
+                  <a href="#Каталог">Каталог</a>
+                  <a href="#Для-партнеров">Для партнеров</a>
+                  <a href="#Как-мы-работаем">Как мы работаем</a>
+                  <a href="#О-террасной-доске-ДКП">О террасной доске ДКП</a>
+                  <a href="#О-нас">О нас</a>
+                  <a href="#Контакты">Контакты</a>
+                </nav>
+
+                <div class="btn"><span>Обратный звонок</span></div>
+                <div class="btn btn--border"><span>Просчитать стоимость</span></div>
+              </div>
+              
+              <div class="menu__navbtn">
+                <span></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </menu>
+
+        <section class="popup-block">
+            <div class="container">
+                <button data-fancybox data-src="#popup-commercial">Получить коммерческое предложение</button>
+                <button data-fancybox data-src="#popup-freeconsult">Получить бесплатную консультацию</button>
+                <button data-fancybox data-src="#popup-callback">Обратный звонок</button>
+                <button data-fancybox data-src="#popup-success">Спасибо!</button>
+            </div>
+        </section>
+
+      <div class="popup" id="popup-commercial">
+          <div class="popup__container">
+            <form action="" class="form-validation">
+              <h2>Получить коммерческое предложение</h2>
+
+              <div class="block-radio block-radio--light">
+                <input type="radio" name="type-user-commercial" id="input-fiz-commercial" required>
+                <label for="input-fiz-commercial">
+                  <span>Физическое лицо</span>
+                </label>
+              </div>
+
+              <div class="block-radio block-radio--light">
+                <input type="radio" name="type-user-commercial" id="input-iur-commercial-2" required>
+                <label for="input-iur-commercial-2">
+                  <span>Юридическое лицо</span>
+                </label>
+              </div>
+
+              <div class="input-block">
+                <input type="text" name="name" class="js__input-focus" required>
+                <span>Представьтесь</span>
+              </div>
+
+              <div class="input-block">
+                <input type="phone" name="phone" class="js__input-focus" required>
+                <span>Телефон</span>
+              </div>
+
+              <div class="input-file">
+                <label for="input-popup-file-1">
+                  <input type="file" id="input-popup-file-1" class="js__input-file">
+                  <svg class="icon">
+                    <use xlink:href="svg/sprite/sprite.svg#link"></use>
+                  </svg>
+                  <span>Прикрепить файл</span>
+                </label>
+              </div>
+
+              <div class="block-check block-check--orange">
+                <input type="checkbox" name="personal-data" id="inut-personal-data-commercial" required>
+                <label for="inut-personal-data-commercial">
+                  <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--bg">
+                <span>Отправить</span>
+              </button>
+            </form>
+          </div>
+      </div>
+    
+      <div class="popup" id="popup-freeconsult">
+          <div class="popup__container">
+            <form action="" class="form-validation">
+              <h2>Получить бесплатную консультацию</h2>
+
+              <div class="block-radio block-radio--light">
+                <input type="radio" name="type-freeconsult" id="input-fiz-freeconsult" required>
+                <label for="input-fiz-freeconsult">
+                  <span>Физическое лицо</span>
+                </label>
+              </div>
+
+              <div class="block-radio block-radio--light">
+                <input type="radio" name="type-freeconsult" id="input-iur-freeconsult-2" required>
+                <label for="input-iur-freeconsult-2">
+                  <span>Юридическое лицо</span>
+                </label>
+              </div>
+
+              <div class="input-block">
+                <input type="text" name="name" class="js__input-focus" required>
+                <span>Представьтесь</span>
+              </div>
+
+              <div class="input-block">
+                <input type="phone" name="phone" class="js__input-focus" required>
+                <span>Телефон</span>
+              </div>
+
+              <div class="input-file">
+                <label for="input-popup-file-1">
+                  <input type="file" id="input-popup-file-1" class="js__input-file">
+                  <svg class="icon">
+                    <use xlink:href="svg/sprite/sprite.svg#link"></use>
+                  </svg>
+                  <span>Прикрепить файл</span>
+                </label>
+              </div>
+
+              <div class="block-check block-check--orange">
+                <input type="checkbox" name="personal-data" id="inut-personal-data-freeconsult" required>
+                <label for="inut-personal-data-freeconsult">
+                  <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--bg">
+                <span>Отправить</span>
+              </button>
+            </form>
+          
+          </div>
+      </div>
+
+
+      <div class="popup" id="popup-callback">
+          <div class="popup__container">
+            <form action="" class="form-validation">
+              <h2>Обратный звонок</h2>
+
+              <div class="input-block">
+                <input type="text" name="name" class="js__input-focus" required>
+                <span>Представьтесь</span>
+              </div>
+
+              <div class="input-block">
+                <input type="phone" name="phone" class="js__input-focus" required>
+                <span>Телефон</span>
+              </div>
+
+              <div class="block-check block-check--orange">
+                <input type="checkbox" name="personal-data" id="inut-personal-data-callback" required>
+                <label for="inut-personal-data-callback">
+                  <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--bg">
+                <span>Отправить</span>
+              </button>
+            </form>
+          
+          </div>
+      </div>
+
+      <div class="popup" id="popup-success">
+          <div class="popup__container">
+            <form action="" class="form-validation">
+              <i>
+                <svg class="icon">
+                  <use xlink:href="svg/sprite/sprite.svg#telegram"></use>
+                </svg>
+              </i>
+              <h2>Спасибо! В ближайшее время мы свяжемся с вами</h2>
+            </form>
+          
+          </div>
+      </div>
+    
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <span>2020, ТриумДПК</span>
+          <em>Политика конфиденциальности</em>
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

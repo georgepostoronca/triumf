@@ -258,3 +258,11 @@ $(function($){
 		}
 	});
 });
+
+
+// Input FIle
+$(".js__input-file").each(function() {
+	$(this).on("change", function() {
+		$(this).closest(".input-file").find("span").text($(this).val());
+	})
+});

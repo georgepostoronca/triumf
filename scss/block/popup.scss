@@ -1,0 +1,109 @@
+.fancybox-content {
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .fancybox-close-small {
+        background: #fff;
+        border-radius: 100%;
+        top: 21px;
+        right: 21px;
+
+        @media(max-width: 992px) {
+            right: 10px;
+            top: 10px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+.popup {
+    width: 860px;
+    background: #FCEFDE;
+    // border-radius: 8px;
+    display: none;
+
+    &__container {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 43px;
+        padding-bottom: 60px;
+
+        @media(max-width: 992px) {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+
+        i {
+            width: 100px;
+            height: 100px;
+            background-color: $orange;
+            display: block;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 29px;
+
+            @media(max-width: 992px) {
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 15px;
+            }
+
+            svg {
+                width: 39px;
+                height: 35px;
+                margin-left: -3px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 23px;
+            // line-height: 40px;
+        }
+
+        .block-radio {
+            margin-right: 70px;
+            margin-bottom: 3px;
+
+            @media(max-width: 992px) {
+                margin-right: 0;
+                width: 100%;
+
+                span {
+
+                }
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        .input-block {
+            margin-bottom: 25px;
+
+            @media(max-width: 480px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .input-file {
+            margin-bottom: 24px;
+        }
+
+        .block-check {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+#popup-success {
+    .popup__container {
+        // padding-bottom: 50px;
+    }
+}
