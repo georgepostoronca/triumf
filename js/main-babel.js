@@ -173,3 +173,20 @@ $(".js__input-focus").blur(function() {
 $(".question__item-head").click(function() {
 	$(this).parent().toggleClass("active").find(".question__item-content").slideToggle();
 })
+
+
+$(".menu__navbtn").click(function() {
+	$(this).toggleClass("active");
+	$(".menu__nav").toggleClass("active");
+});
+
+$(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".menu__nav"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$(".menu__nav").removeClass("active");
+			$(".menu__navbtn").removeClass("active");
+		}
+	});
+});
