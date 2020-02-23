@@ -1,0 +1,16 @@
+.question__item-head {
+  display: flex;
+}
+.question__item-head i {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question__item-head i svg {
+  width: 15px;
+  height: 7px;
+}

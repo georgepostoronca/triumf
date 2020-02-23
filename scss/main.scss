@@ -280,6 +280,89 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
     }
 }
 
+.input-textarea {
+    position: relative;
+
+    @media(max-width: 768px) {
+        height: 100px;
+    }
+
+    &#{&}--light {
+        textarea {
+            border-color: #D5964F;
+
+            &.error {
+                border-color: #EB5757;
+                color: #EB5757;
+            }
+        }
+        span {
+            color: #D5964F;
+        }
+    }
+
+    &.focus {
+        span {
+            top: 7px;
+            font-weight: normal;
+            font-size: 12px;
+        }
+
+        textarea {
+            border-width: 2px;
+            border-color: $black;
+            padding-top: 20px;
+        }
+    }
+
+    span {
+        position: absolute;
+        top: 21px;
+        left: 0;
+        pointer-events: none;
+
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1;
+        color: #A8A199;
+        transition: .2s;
+
+        @media(max-width: 768px) {
+            top: 16px;
+            font-size: 16px;
+        }
+    }
+
+    textarea {
+        border-color: #E6D9CC;
+        transition: .2s;
+
+        max-width: 100%;
+        min-width: 100%;
+        height: 116px;
+        border: 0;
+        outline: none;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #E6D9CC;
+
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: $black;
+
+        &.error {
+            border-width: 2px;
+            border-color: #EB5757;
+            color: #EB5757;
+        }
+
+        @media(max-width: 768px) {
+            height: 100px;
+        }
+    }
+}
+
 .block-radio {
     display: inline-block;
 
@@ -448,3 +531,4 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 @import "block/partener.scss";
 @import "block/compboard.scss";
 @import "block/howwork.scss";
+@import "block/question.scss";

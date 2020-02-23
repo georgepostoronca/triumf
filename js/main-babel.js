@@ -160,10 +160,16 @@ $(".js__input-focus").focus(function() {
 	console.log("focus");
 	
 	$(this).closest(".input-block").addClass("focus");
+	$(this).closest(".input-textarea").addClass("focus");
 });
 
 $(".js__input-focus").blur(function() {
 	if($(this).val() == "") {
 		$(this).closest(".input-block").removeClass("focus");
+		$(this).closest(".input-textarea").removeClass("focus");
 	}
 });
+
+$(".question__item-head").click(function() {
+	$(this).parent().toggleClass("active").find(".question__item-content").slideToggle();
+})
