@@ -799,6 +799,7 @@
         margin-right: 12px;
         opacity: 1;
         transition: .2s;
+        border-radius: 100%;
        
         &.swiper-pagination-bullet-active {
             box-shadow: 0 0 0 4px $orange;
