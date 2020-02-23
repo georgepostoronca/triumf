@@ -32,13 +32,16 @@
 
         img {
             width: 115px;
+            height: 95px;
 
             @media(max-width: 992px) {
                 width: 80px;
+                height: 57px;
             }
 
             @media(max-width: 480px) {
                 width: 60px;
+                height: 43px;
             }
         }
     }
@@ -274,7 +277,7 @@
 
         &.active {
             pointer-events: none;
-            
+
             span {
                 width: 0;
             }
