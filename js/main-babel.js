@@ -73,5 +73,85 @@ var swiper = new Swiper('.terrslid', {
       }
 });
 
+var tabSlid1Set = {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	// init: false,
+	pagination: {
+	  el: '.howwork-tab-one__pagination',
+	  clickable: true,
+	},
+	navigation: {
+		nextEl: '.howwork-tab-one__next',
+		prevEl: '.howwork-tab-one__prev',
+	},
+	autoHeight: true,
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		640: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
+	}
+}
+var tabSlid1 = new Swiper('.howwork-tab-one', tabSlid1Set);
 
-// Scroll
+var tabSlid2Set = {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	// init: false,
+	pagination: {
+		el: '.howwork-tab-two__pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.howwork-tab-two__next',
+		prevEl: '.howwork-tab-two__prev',
+	},
+	autoHeight: true,
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		640: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
+	}
+}
+var tabSlid2 = new Swiper('.howwork-tab-two', tabSlid2Set);
+
+$(".js__tab-btn").click(function() {
+	var index = $(this).index();
+	$(this).addClass("active").siblings().removeClass("active");
+	$(".howwork-slider-wrap").eq(index).fadeIn().siblings().hide();
+	console.log(typeof index, index);
+	
+	if(index === 0) {
+		tabSlid1.destroy();
+		new Swiper('.howwork-tab-one', tabSlid1Set);
+	} else {
+		tabSlid2.destroy();
+		new Swiper('.howwork-tab-two', tabSlid2Set);
+	}
+});

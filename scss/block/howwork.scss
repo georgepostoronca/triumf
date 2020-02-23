@@ -1,0 +1,238 @@
+.howwork {
+    padding-top: 88px;
+    padding-bottom: 80px;
+
+    @media(max-width: 1080px) {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 41px;
+    }
+    &__tab {
+        
+        &-head {
+            display: flex;
+            margin-bottom: 40px;
+
+            @media(max-width: 567px) {
+                display: block;
+                margin-bottom: 20px;
+            } 
+            
+            button {
+                flex: 1;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid #F2ECE4;
+                outline: none;
+                transition: .2s;
+                padding: 0 10px;
+                padding-bottom: 23px;
+                font-weight: normal;
+
+                @media(max-width: 992px) {
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                } 
+
+                @media(max-width: 567px) {
+                    width: 100%;
+                    border: 1px solid $orange;
+                    line-height: 1;
+                    padding: 10px 5px;
+                    margin-bottom: 10px;
+                    border-radius: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                } 
+
+                &.active {
+                    border-color: $orange;
+                    color: $orange;
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    border-color: $orange;
+                    color: $orange;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &__content {
+
+    }
+
+    &-slider {
+        &-wrap {
+            position: relative;
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            .swiper-pagination {
+                width: 100%;
+                margin-top: 32px;
+            }
+
+            .swiper-button-prev, .swiper-button-next {
+                width: 64px;
+                height: 64px;
+                background: #FCEFDE;
+                border-radius: 100%;
+    
+                font-size: 0;
+                color: transparent;
+                transition: .2s;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -50px;
+                outline: none;
+
+                @media(max-width: 1280px) {
+                    width: 30px;
+                    height: 30px;
+                    margin-top: -35px;
+                }
+    
+                &:hover {
+                    background-color: $orange;
+                }
+    
+                &:after {
+                    display: none;
+                }
+            
+                svg {
+                    fill: transparent;
+                    width: 11px;
+                    height: 21px;
+
+                    @media(max-width: 1280px) {
+                        width: 6px;
+                        height: 16px;
+                    }
+    
+                }
+            }
+    
+            .swiper-button-prev {
+                left: -95px;
+
+                @media(max-width: 1380px) {
+                    left: -33px;
+                }
+
+                @media(max-width: 1280px) {
+                    left: -15px;
+                }
+
+                svg {
+                    transform: rotate(180deg);
+                    transform-origin: center center;
+                    margin-left: -4px;
+                    margin-top: -2px;
+
+                    @media(max-width: 1280px) {
+                        margin-left: -2px;
+                        margin-top: -1px;
+                    }
+                }
+            }
+    
+            .swiper-button-next {
+                right: -95px;
+
+                @media(max-width: 1380px) {
+                    right: -33px;
+                }
+
+                @media(max-width: 1280px) {
+                    right: -15px;
+                }
+
+                svg {
+                    margin-right: -4px;
+                    margin-top: -2px;
+
+                    @media(max-width: 1280px) {
+                        margin-right: -2px;
+                        margin-top: -1px;
+                    }
+                }
+            }
+        }
+
+        &__item {
+            border: 1px solid #F2ECE4;
+            box-sizing: border-box;
+            border-radius: 8px;
+            padding: 29px 39px;
+            min-height: 308px;
+
+            @media(max-width: 1180px) {
+                padding: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            @media(max-width: 768px) {
+                min-height: inherit;
+            }
+
+            b {
+                display: block;
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 52px;
+                color: $orange;
+
+                margin-bottom: 40px;
+
+                @media(max-width: 992px) {
+                    margin-bottom: 20px;
+                }
+
+                @media(max-width: 768px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            span {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 5px;
+                display: block;
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
