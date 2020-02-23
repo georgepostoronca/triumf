@@ -155,3 +155,15 @@ $(".js__tab-btn").click(function() {
 		new Swiper('.howwork-tab-two', tabSlid2Set);
 	}
 });
+
+$(".js__input-focus").focus(function() {
+	console.log("focus");
+	
+	$(this).closest(".input-block").addClass("focus");
+});
+
+$(".js__input-focus").blur(function() {
+	if($(this).val() == "") {
+		$(this).closest(".input-block").removeClass("focus");
+	}
+});
