@@ -585,6 +585,92 @@
           </div>
         </div>
       </section>
+
+      <!-- Compare Board -->
+      <div class="compboard">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-8">
+              <h1>Сравнение террасной доски ДПК и лиственницы</h1>
+            </div>
+          </div>
+
+          <script>
+            function scrolled(o) {
+              if (o.offsetWidth + o.scrollLeft == o.scrollWidth) {
+                o.parentNode.classList.add("end");
+                o.parentNode.classList.remove("between");
+                o.parentNode.classList.remove("start");
+              } else {
+                o.parentNode.classList.remove("end");
+                o.parentNode.classList.add("between");
+                o.parentNode.classList.remove("start");
+              }
+
+              if (o.scrollLeft == 0) {
+                o.parentNode.classList.remove("end");
+                o.parentNode.classList.remove("between");
+                o.parentNode.classList.add("start");
+              }
+            }
+          </script>
+
+          <div class="compboard__scroll-parent start">
+            <div class="compboard__scroll" onscroll="scrolled(this)">
+              <div class="compboard__grid">
+                <div class="compboard__column">
+                  <div class="compboard__row compboard__row--header">
+                    <b>Характеристика</b>
+                    <b>Лиственница</b>
+                    <b>ДПК</b>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Прочность</span>
+                    <span>Высокая</span>
+                    <span>Высокая</span>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Внешний вид</span>
+                    <span>Отличный, натуральная текстура</span>
+                    <span>Отличный, идеально ровная поверхность</span>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Уход</span>
+                    <span>Требуется</span>
+                    <span>Не требуется</span>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Монтаж</span>
+                    <span>Сложный</span>
+                    <span>Относительно простой</span>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Устойчивость к влаге и УФ</span>
+                    <span>Только при хорошей обработке</span>
+                    <span>Высокая без дополнительной обработки</span>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Расходы на обслуживание</span>
+                    <span>Ежегодно</span>
+                    <span>Максимум 1 раз в 25 лет</span>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Покраска</span>
+                    <span>Требуется</span>
+                    <span>Не требуется</span>
+                  </div>
+                  <div class="compboard__row">
+                    <span>Огнестойкость</span>
+                    <span>Нет</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <!-- Get Catalog -->
       <section class="whytrimf">
@@ -628,6 +714,22 @@
                   <b>Товар в наличии</b>
                   <p>Террасная доска в стандартных цветах и размерах всегда есть в наличии.</p>
                 </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calc Material -->
+      <section class="calcmatarial">
+        <div class="container">
+          <div class="row">
+            <div class="clo-12 col-sm-12 col-lg-7">
+              <h1>Хочу рассчитать стоимость материалов</h1>
+              <p>Вы можете ввести необходимые параметры материалов, с вами свяжется менеджер и назовет стоимость, проконсультирует по интересующим вопросам</p>
+              
+              <button class="btn btn--bg">
+                <span>Просчитать стоимость</span>
+              </button>
             </div>
           </div>
         </div>

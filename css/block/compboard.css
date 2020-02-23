@@ -1,0 +1,6 @@
+.compboard__grid {
+  display: flex;
+}
+.compboard__column {
+  flex: 1;
+}
