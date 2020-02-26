@@ -982,6 +982,7 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
     &#{&}--new {
         border-color: #EB5757;
         &:after {
+            content: "NEW";
             color: #EB5757;
         }
     }

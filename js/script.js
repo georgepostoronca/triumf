@@ -151,7 +151,6 @@ element.forEach(function(item) {
 // Form Vlidation
 $.validator.setDefaults({
 	debug: false,
-	success: 'valid',
 	rules: {
 		email: {
 			required: true,
@@ -167,28 +166,28 @@ $.validator.setDefaults({
 		$(this).addClass('valid');
 	},
 	submitHandler: function(item) {
-		debugger;
-		// item.preventDefault();
-		var data = new FormData(item);
-		console.log(data)
-		
-		// var data = $(this).serialize();
-		// console.log(data);
-		// $.post({
-		// 	url: "../mail.php",
-		// 	data: data,
-		// 	success: function() {
-		// 		console.log("adawd");
-		// 	}
-		// });
-		// $.ajax({
-		// 	url: "../mail.php",
-		// 	data: data,
-		// 	success: function() {
-		// 		console.log("awd")
-		// 	}
-		// });
-		// debugger;
+		try {
+			// item.preventDefault();
+			// var data = new FormData(item);
+			// console.log(data.get("phone"));
+			// console.log(data.get("name"));
+
+			$.post({
+				url: "../mail.php",
+				data: $(item).serialize(),
+				// processData: false,
+				// contentType: false,
+				success: function() {
+					console.log("awd")
+				},
+				error: function(e) {
+					console.log("Error: " + e)
+				}
+			});
+			// debugger;
+		} catch(e) {
+			console.log(e)
+		}
 	}
 });
 
@@ -438,3 +437,18 @@ $("#up").click(function() {
 		scrollTop: 0
 	}, 1000);
 })
+
+
+
+// Change IMG
+// $(".js__change-img").each(function() {
+// 	$(this).on("click", function() {
+// 		console.log($(this).val())
+// 		$(this).closest(".catalog__item-img").find(".js__change-block").attr("src", "img/color/" + $(this).val());
+// 	});
+// });
+
+$(".js__change-img").on("change", function() {
+	console.log($(this).val())
+	$(this).closest(".catalog__item-img").find(".js__change-block").attr("src", "img/color/" + $(this).val());
+});
