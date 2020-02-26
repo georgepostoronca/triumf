@@ -600,6 +600,23 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
             &:checked {
                 & + label {
                     box-shadow: 0 0 0 2px #fff, 0 0 0 3px currentColor;
+                    position: relative;
+
+                    &:after {
+                        content: attr(data-text);
+                        font-size: 12px;
+                        width: auto;
+                        position: absolute;
+                        top: -20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        color: $black;
+
+                        @media(max-width: 480px) {
+                            font-size: 10px;
+                            top: -15px;
+                        }
+                    }
                 }
             }
         }
@@ -719,6 +736,7 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
     border-radius: 8px;
     display: block;
     position: relative;
+    z-index: 1;
 
     label {
         background-color: transparent;

@@ -474,3 +474,16 @@ $(".js__next-rewiew").click(function() {
 	$(".review__item-text").text(review[reviewActive].text);
 	reviewActive++;
 });
+
+
+// uploadField.onchange = function() {
+// 	if(this.files[0].size > 307200){
+// 		alert("File is too big!");
+// 		this.value = "";
+// 	};
+// };
+
+$(".js__calc-select-size").on("click", function() {
+	console.log($(this).index());
+	$(".js__calc-input-size input").eq($(this).index()).prop("checked", true);
+})

@@ -4,6 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Triumf</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet" async>
     <link rel="stylesheet" href="css/main.css">
@@ -1427,7 +1429,7 @@
           <!-- Elements -->
           <div class="calculator__el">
             <h4>Вид доски:</h4>
-            <div class="customselect">
+            <div class="customselect customselect--calculator">
               <input class="customselect__flag" type="checkbox" id="customselect-1">
               <label class="customselect__current" for="customselect-1">
                 <i>
@@ -1440,7 +1442,7 @@
                 </svg>
               </label>
               <div class="customselect__content">
-                <label for="triumf-slim">
+                <label for="triumf-slim"  class="js__calc-select-size">
                   <input type="radio" class="customselect__option" name="select-board" id="triumf-slim"
                     data-ico="img/product-1.jpg" data-text="Террасная доска Триумф Слим">
                   <i>
@@ -1449,7 +1451,7 @@
                   <span>Террасная доска Триумф Слим</span>
                 </label>
 
-                <label for="triumf-eco">
+                <label for="triumf-eco"  class="js__calc-select-size">
                   <input type="radio" class="customselect__option" name="select-board" id="triumf-eco"
                     data-ico="img/product-2.jpg" data-text="Террасная доска Триумф Эко">
                   <i>
@@ -1458,7 +1460,7 @@
                   <span>Террасная доска Триумф Эко</span>
                 </label>
 
-                <label for="triumf-triumf">
+                <label for="triumf-triumf"  class="js__calc-select-size">
                   <input type="radio" class="customselect__option" name="select-board" id="triumf-triumf"
                     data-ico="img/product-3.jpg" data-text="Террасная доска Триумф">
                   <i>
@@ -1474,32 +1476,32 @@
               <div class="select-color select-color--horz">
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-pop-1" id="sel-color-pop-1">
-                  <label for="sel-color-pop-1" style="color: #362827"></label>
+                  <label for="sel-color-pop-1" style="color: #362827" data-text="Венге"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-pop-1" id="sel-color-pop-2">
-                  <label for="sel-color-pop-2" style="color: #592301"></label>
+                  <label for="sel-color-pop-2" style="color: #592301" data-text="Шоколад"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-pop-1" id="sel-color-pop-3">
-                  <label for="sel-color-pop-3" style="color: #838582"></label>
+                  <label for="sel-color-pop-3" style="color: #838582" data-text="Серый"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-pop-1" id="sel-color-pop-4">
-                  <label for="sel-color-pop-4" style="color: #000000"></label>
+                  <label for="sel-color-pop-4" style="color: #000000" data-text="Терракот"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-pop-1" id="sel-color-pop-5">
-                  <label for="sel-color-pop-5" style="color: #CC633C"></label>
+                  <label for="sel-color-pop-5" style="color: #CC633C" data-text="Черный"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-pop-1" id="sel-color-pop-6">
-                  <label for="sel-color-pop-6" style="color: #D5C4AA"></label>
+                  <label for="sel-color-pop-6" style="color: #D5C4AA" data-text="Натур"></label>
                 </div>
               </div>
             </div>
@@ -1507,20 +1509,20 @@
             <div class="sec-size">
               <h4>Размер:</h4>
 
-              <div class="select-size select-size--four">
-                <input type="radio" name="select-size-pop-1" id="input-select-size-1" required>
+              <div class="select-size select-size--four js__calc-input-size">
+                <input type="radio" name="select-size-pop-1" id="input-select-size-1" required checked>
                 <label for="input-select-size-1">
-                  <span>140x25</span>
+                  <span>136х25 мм </span>
                 </label>
 
                 <input type="radio" name="select-size-pop-1" id="input-select-size-2" required>
                 <label for="input-select-size-2">
-                  <span>140x18</span>
+                  <span>140х18 мм</span>
                 </label>
 
                 <input type="radio" name="select-size-pop-1" id="input-select-size-3" required>
                 <label for="input-select-size-3">
-                  <span>136x25</span>
+                  <span>140х25 мм</span>
                 </label>
 
                 <input type="radio" name="select-size-pop-1" id="input-select-size-4" required>
@@ -1534,19 +1536,19 @@
               <h4>Длина:</h4>
 
               <div class="select-size select-size--four">
-                <input type="radio" name="select-width-pop-1" id="input-select-width-1" required>
+                <input type="radio" name="select-width-pop-1" value="3" id="input-select-width-1" required>
                 <label for="input-select-width-1">
                   <span>3 м</span>
                 </label>
 
-                <input type="radio" name="select-width-pop-1" id="input-select-width-2" required>
+                <input type="radio" name="select-width-pop-1" value="4" id="input-select-width-2" required>
                 <label for="input-select-width-2">
                   <span>4 м</span>
                 </label>
 
-                <input type="radio" name="select-width-pop-1" id="input-select-width-3" required>
+                <input type="radio" name="select-width-pop-1" value="6" id="input-select-width-3" required>
                 <label for="input-select-width-3">
-                  <span>5 м</span>
+                  <span>6 м</span>
                 </label>
 
                 <input type="radio" name="select-width-pop-1" id="input-select-width-4" required>
@@ -1556,18 +1558,16 @@
               </div>
             </div>
 
-            <div class="input-block">
-              <input type="text" name="set-width" class="js__input-focus" required>
-              <span>Введите длину</span>
-            </div>
+<!--            <div class="input-block">-->
+<!--              <input type="text" name="set-width" class="js__input-focus" required>-->
+<!--              <span>Введите длину</span>-->
+<!--            </div>-->
 
             <div class="sec-krep">
               <h4>
                 Крепление:
                 <div class="info">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cum obcaecati fugit perferendis
-                    impedit consequuntur ullam nemo velit natus, alias laudantium accusantium laboriosam, voluptatem
-                    deserunt quos? Consequatur quam ipsa alias?</p>
+                  <p>Комплектующие для монтажа</p>
                 </div>
               </h4>
 
