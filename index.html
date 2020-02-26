@@ -42,19 +42,19 @@
                 </div>
 
                 <div class="menu__btn">
-                  <div class="btn"><span>Обратный звонок</span></div>
+                  <div class="btn" data-fancybox data-src="#popup-callback"><span>Обратный звонок</span></div>
                   <div class="btn btn--border"><span>Просчитать стоимость</span></div>
                 </div>
               </div>
 
               <div class="menu__nav">
                 <nav>
-                  <a href="#Каталог">Каталог</a>
-                  <a href="#Для-партнеров">Для партнеров</a>
-                  <a href="#Как-мы-работаем">Как мы работаем</a>
-                  <a href="#О-террасной-доске-ДКП">О террасной доске ДКП</a>
-                  <a href="#О-нас">О нас</a>
-                  <a href="#Контакты">Контакты</a>
+                  <a href="#catalog" class="js__scroll-to">Каталог</a>
+                  <a href="#partener" class="js__scroll-to">Для партнеров</a>
+                  <a href="#howwork" class="js__scroll-to">Как мы работаем</a>
+                  <a href="#tarrboard" class="js__scroll-to">О террасной доске ДКП</a>
+                  <a href="#about" class="js__scroll-to">О нас</a>
+                  <a href="#contact" class="js__scroll-to">Контакты</a>
                 </nav>
 
                 <div class="btn"><span>Обратный звонок</span></div>
@@ -129,11 +129,11 @@
             </div>
 
             <div class="col-12 col-sm-12 col-md-5 header__video">
-              <div class="header__play">
+              <!-- <div class="header__play">
                 <svg class="icon">
                   <use xlink:href="svg/sprite/sprite.svg#play"></use>
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -149,6 +149,7 @@
               <div class="catalog__item">
                 <!-- IMG -->
                 <div class="catalog__item-img">
+                  <div class="label-type"></div>
                   <img src="img/product-1.jpg" alt="IMG">
 
                   <div class="select-color">
@@ -267,6 +268,7 @@
               <div class="catalog__item">
                 <!-- IMG -->
                 <div class="catalog__item-img">
+                  <div class="label-type label-type--new"></div>
                   <img src="img/product-3.jpg" alt="IMG">
 
                   <div class="select-color">
@@ -326,7 +328,7 @@
       </section>
 
       <!-- terrboard -->
-      <section class="terrboard">
+      <section class="terrboard" id="tarrboard">
         <div class="container">
           <h1>О террасной доске ДПК</h1>
           
@@ -516,8 +518,8 @@
                       </div>
                       
                       <!-- Arrows -->
-                      <div class="swiper-button-prev terrslid__next"></div>
-                      <div class="swiper-button-next terrslid__prev"></div>
+                      <div class="swiper-button-prev terrslid__prev"></div>
+                      <div class="swiper-button-next terrslid__next"></div>
 
                       <!-- Pagination -->
                       <div class="terrslid__pagination"></div>
@@ -540,7 +542,7 @@
               <h1>Хочу рассчитать стоимость материалов</h1>
               <p>Вы можете ввести необходимые параметры материалов, с вами свяжется менеджер и назовет стоимость, проконсультирует по интересующим вопросам</p>
               
-              <button class="btn btn--bg">
+              <button class="btn btn--bg" data-fancybox data-src="#popup-calculator">
                 <span>Просчитать стоимость</span>
               </button>
             </div>
@@ -549,7 +551,7 @@
       </section>
 
       <!-- Partener -->
-      <section class="partener">
+      <section class="partener" id="partener">
         <div class="container">
           <div class="row">
             <div class="partener__text col-12 col-sm-12 col-md-6 col-xl-7">
@@ -637,7 +639,7 @@
           </div>
 
           <div class="partener__btn">
-            <button class="btn btn--border">
+            <button class="btn btn--border" data-fancybox data-src="#popup-commercial">
               <span>Получить коммерческое предложение</span>
             </button>
           </div>
@@ -785,7 +787,7 @@
               <h1>Хочу рассчитать стоимость материалов</h1>
               <p>Вы можете ввести необходимые параметры материалов, с вами свяжется менеджер и назовет стоимость, проконсультирует по интересующим вопросам</p>
               
-              <button class="btn btn--bg">
+              <button class="btn btn--bg" data-fancybox data-src="#popup-calculator">
                 <span>Просчитать стоимость</span>
               </button>
             </div>
@@ -794,7 +796,7 @@
       </section>
 
       <!-- How Work -->
-      <div class="howwork">
+      <section class="howwork" id="howwork">
         <div class="container">
           <h1>Как мы работаем</h1>
 
@@ -889,14 +891,6 @@
                     <div class="swiper-slide">
                       <div class="howwork-slider__item">
                         <b>03.</b>
-                        <span>Замер площадки</span>
-                        <p>Специалист проведет точный расчет площадки и сообщит конечную стоимость материалов</p>
-                      </div>
-                    </div>
-  
-                    <div class="swiper-slide">
-                      <div class="howwork-slider__item">
-                        <b>04.</b>
                         <span>Доставка</span>
                         <p>Привозим материалы точно в оговоренный срок. Доставляем по всей территории России</p>
                       </div>
@@ -904,11 +898,12 @@
   
                     <div class="swiper-slide">
                       <div class="howwork-slider__item">
-                        <b>05.</b>
+                        <b>04.</b>
                         <span>Оплата</span>
-                        <p>Возможен любой способ оплаты: банковский перевод,безналичный расчет, оплата наличными и банковской картой</p>
+                        <p>Возможен любой способ оплаты: банковский перевод, безналичный расчет, оплата наличными и банковской картой</p>
                       </div>
                     </div>
+
                   </div>
                 </div>
                 <!-- Add Pagination -->
@@ -928,10 +923,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Get Catalog -->
-      <div class="getcatalog">
+      <div class="getcatalog" id="catalog">
         <div class="container">
           <div class="row">
             
@@ -947,7 +942,7 @@
                   </div>
   
                   <div class="input-block">
-                    <input type="text" name="name" class="js__input-focus" required>
+                    <input type="text" name="phone" class="js__input-focus" required>
                     <span>Электронная почта</span>
                   </div>
   
@@ -969,7 +964,7 @@
       </div>
 
       <!-- Review -->
-      <section class="review">
+      <section class="review" id="about">
         <div class="container">
           <h1>Отзывы о нас</h1>
 
@@ -1181,7 +1176,7 @@
       </section>
       
       <!-- Contact -->
-      <section class='contact'>
+      <section class='contact' id="contact">
           <div class="container">
               <h1>Контактная информация</h1>
 
@@ -1197,13 +1192,13 @@
                       <span>+7 929 604 89-56</span>
                     </a>
 
-                    <a href="mailto:info@diasgroup.ru">
+                    <a href="mailto:info@triumfdpk.ru">
                       <i>
                         <svg class="icon">
                           <use xlink:href="svg/sprite/sprite.svg#telegram"></use>
                         </svg>
                       </i>
-                      <span>info@diasgroup.ru</span>
+                      <span>info@triumfdpk.ru</span>
                     </a>
 
                     <div class="social">
@@ -1230,7 +1225,7 @@
                 
                 <div class="col-12 col-sm-12 col-lg-8">
                   <div class="contact__info">
-                    <span>Склад</span>
+                    <span>Офис</span>
                     <em>г. Москва, Бизнес центр «Комплект», ул. Кантемировская</em>
                     <p>Работаем по будням 10:00 до 17:00. <br> Звонки принимаем ежедневно с 9:00 до 21:00</p>
                   </div>
@@ -1251,10 +1246,593 @@
           <span>2020, ТриумДПК</span>
           <em>Политика конфиденциальности</em>
         </div>
+
+        <div id="up">
+          <svg class="icon">
+            <use xlink:href="svg/sprite/sprite.svg#arrow-2"></use>
+          </svg>
+        </div>
       </footer>
     </div>
 
 
-    <script src="js/script.js"></script>
+
+    <!-- Popup -->
+    
+  <div class="popup" id="popup-commercial">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <h2>Получить коммерческое предложение</h2>
+
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-user-commercial" id="input-fiz-commercial" required>
+          <label for="input-fiz-commercial">
+            <span>Физическое лицо</span>
+          </label>
+        </div>
+
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-user-commercial" id="input-iur-commercial-2" required>
+          <label for="input-iur-commercial-2">
+            <span>Юридическое лицо</span>
+          </label>
+        </div>
+
+        <div class="input-block">
+          <input type="text" name="name" class="js__input-focus" required>
+          <span>Представьтесь</span>
+        </div>
+
+        <div class="input-block">
+          <input type="phone" name="phone" class="js__input-focus" required>
+          <span>Телефон</span>
+        </div>
+
+        <div class="input-file">
+          <label for="input-popup-file-2">
+            <input type="file" id="input-popup-file-2" class="js__input-file">
+            <svg class="icon">
+              <use xlink:href="svg/sprite/sprite.svg#link"></use>
+            </svg>
+            <span>Прикрепить файл</span>
+          </label>
+        </div>
+
+        <div class="block-check block-check--orange">
+          <input type="checkbox" name="personal-data" id="inut-personal-data-commercial" required>
+          <label for="inut-personal-data-commercial">
+            <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--bg">
+          <span>Отправить</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-freeconsult">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <h2>Получить бесплатную консультацию</h2>
+
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-freeconsult" id="input-fiz-freeconsult" required>
+          <label for="input-fiz-freeconsult">
+            <span>Физическое лицо</span>
+          </label>
+        </div>
+
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-freeconsult" id="input-iur-freeconsult-2" required>
+          <label for="input-iur-freeconsult-2">
+            <span>Юридическое лицо</span>
+          </label>
+        </div>
+
+        <div class="input-block">
+          <input type="text" name="name" class="js__input-focus" required>
+          <span>Представьтесь</span>
+        </div>
+
+        <div class="input-block">
+          <input type="phone" name="phone" class="js__input-focus" required>
+          <span>Телефон</span>
+        </div>
+
+        <div class="input-file">
+          <label for="input-popup-file-10">
+            <input type="file" id="input-popup-file-10" class="js__input-file">
+            <svg class="icon">
+              <use xlink:href="svg/sprite/sprite.svg#link"></use>
+            </svg>
+            <span>Прикрепить файл</span>
+          </label>
+        </div>
+
+        <div class="block-check block-check--orange">
+          <input type="checkbox" name="personal-data" id="inut-personal-data-freeconsult" required>
+          <label for="inut-personal-data-freeconsult">
+            <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--bg">
+          <span>Отправить</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-callback">
+    <div class="popup__container">
+      <form class="form-validation">
+        <h2>Обратный звонок</h2>
+
+        <div class="input-block">
+          <input type="text" name="name" class="js__input-focus" required>
+          <span>Представьтесь</span>
+        </div>
+
+        <div class="input-block">
+          <input type="phone" name="phone" class="js__input-focus" required>
+          <span>Телефон</span>
+        </div>
+
+        <div class="block-check block-check--orange">
+          <input type="checkbox" name="personal-data" id="inut-personal-data-callback" required>
+          <label for="inut-personal-data-callback">
+            <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--bg">
+          <span>Отправить</span>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="popup" id="popup-success">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <i class="ico">
+          <svg class="icon">
+            <use xlink:href="svg/sprite/sprite.svg#telegram"></use>
+          </svg>
+        </i>
+        <h2>Спасибо! В ближайшее время мы свяжемся с вами</h2>
+      </form>
+
+    </div>
+  </div>
+
+
+
+  <div class="popup popup--big popup-calculator" id="popup-calculator">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <div class="calculator">
+
+          <!-- Elements -->
+          <div class="calculator__el">
+            <h4>Вид доски:</h4>
+            <div class="customselect">
+              <input class="customselect__flag" type="checkbox" id="customselect-1">
+              <label class="customselect__current" for="customselect-1">
+                <i>
+                  <img src="img/product-1.jpg" alt="IMG">
+                </i>
+                <span>Террасная доска Триумф</span>
+
+                <svg class="icon">
+                  <use xlink:href="svg/sprite/sprite.svg#arrow-2"></use>
+                </svg>
+              </label>
+              <div class="customselect__content">
+                <label for="triumf-slim">
+                  <input type="radio" class="customselect__option" name="select-board" id="triumf-slim"
+                    data-ico="img/product-1.jpg" data-text="Террасная доска Триумф Слим">
+                  <i>
+                    <img src="img/product-1.jpg" alt="IMG">
+                  </i>
+                  <span>Террасная доска Триумф Слим</span>
+                </label>
+
+                <label for="triumf-eco">
+                  <input type="radio" class="customselect__option" name="select-board" id="triumf-eco"
+                    data-ico="img/product-2.jpg" data-text="Террасная доска Триумф Эко">
+                  <i>
+                    <img src="img/product-2.jpg" alt="IMG">
+                  </i>
+                  <span>Террасная доска Триумф Эко</span>
+                </label>
+
+                <label for="triumf-triumf">
+                  <input type="radio" class="customselect__option" name="select-board" id="triumf-triumf"
+                    data-ico="img/product-3.jpg" data-text="Террасная доска Триумф">
+                  <i>
+                    <img src="img/product-3.jpg" alt="IMG">
+                  </i>
+                  <span>Террасная доска Триумф</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="sec-color">
+              <h4>Цвет:</h4>
+              <div class="select-color select-color--horz">
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-1">
+                  <label for="sel-color-pop-1" style="color: #8E7D63"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-2">
+                  <label for="sel-color-pop-2" style="color: #000000"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-3">
+                  <label for="sel-color-pop-3" style="color: #838582"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-4">
+                  <label for="sel-color-pop-4" style="color: #8B705B"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-5">
+                  <label for="sel-color-pop-5" style="color: #8C624C"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-6">
+                  <label for="sel-color-pop-6" style="color: #D5C4AA"></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec-size">
+              <h4>Размер:</h4>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-size-pop-1" id="input-select-size-1" required>
+                <label for="input-select-size-1">
+                  <span>140x25</span>
+                </label>
+
+                <input type="radio" name="select-size-pop-1" id="input-select-size-2" required>
+                <label for="input-select-size-2">
+                  <span>140x18</span>
+                </label>
+
+                <input type="radio" name="select-size-pop-1" id="input-select-size-3" required>
+                <label for="input-select-size-3">
+                  <span>136x25</span>
+                </label>
+
+                <input type="radio" name="select-size-pop-1" id="input-select-size-4" required>
+                <label for="input-select-size-4">
+                  <span>Другой</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="sec-width">
+              <h4>Длина:</h4>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-width-pop-1" id="input-select-width-1" required>
+                <label for="input-select-width-1">
+                  <span>1 м</span>
+                </label>
+
+                <input type="radio" name="select-width-pop-1" id="input-select-width-2" required>
+                <label for="input-select-width-2">
+                  <span>2 м</span>
+                </label>
+
+                <input type="radio" name="select-width-pop-1" id="input-select-width-3" required>
+                <label for="input-select-width-3">
+                  <span>3 м</span>
+                </label>
+
+                <input type="radio" name="select-width-pop-1" id="input-select-width-4" required>
+                <label for="input-select-width-4">
+                  <span>Другая</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-block">
+              <input type="text" name="set-width" class="js__input-focus" required>
+              <span>Введите длину</span>
+            </div>
+
+            <div class="sec-krep">
+              <h4>
+                Крепление:
+                <div class="info">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cum obcaecati fugit perferendis
+                    impedit consequuntur ullam nemo velit natus, alias laudantium accusantium laboriosam, voluptatem
+                    deserunt quos? Consequatur quam ipsa alias?</p>
+                </div>
+              </h4>
+
+              <div class="select-size">
+                <input type="radio" name="select-yesno-pop-1" id="input-select-yesno-1" required>
+                <label for="input-select-yesno-1">
+                  <span>Да</span>
+                </label>
+
+                <input type="radio" name="select-yesno-pop-1" id="input-select-yesno-2" required>
+                <label for="input-select-yesno-2">
+                  <span>Нет</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="sec-perim">
+              <h4>Поверхность строения, м2</h4>
+              <div class="input-block">
+                <input type="text" name="set-perim" class="js__input-focus" required>
+                <span>Введите значение</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aside -->
+          <div class="calculator__aside">
+            <h3>Ваши данные</h3>
+            <div class="block-radio block-radio--light">
+              <input type="radio" name="type-consult" id="input-fiz-consult" required>
+              <label for="input-fiz-consult">
+                <span>Физическое лицо</span>
+              </label>
+            </div>
+
+            <div class="block-radio block-radio--light">
+              <input type="radio" name="type-consult" id="input-iur-consult-2" required>
+              <label for="input-iur-consult-2">
+                <span>Юридическое лицо</span>
+              </label>
+            </div>
+
+            <div class="input-block">
+              <input type="text" name="name" class="js__input-focus" required>
+              <span>Представьтесь</span>
+            </div>
+
+            <div class="input-block">
+              <input type="phone" name="phone" class="js__input-focus" required>
+              <span>Телефон</span>
+            </div>
+
+            <div class="input-file">
+              <label for="input-popup-file-1">
+                <input type="file" id="input-popup-file-1" class="js__input-file">
+                <svg class="icon">
+                  <use xlink:href="svg/sprite/sprite.svg#link"></use>
+                </svg>
+                <span>Прикрепить файл</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="personal-data" id="inut-personal-data-calculator" required>
+              <label for="inut-personal-data-calculator">
+                <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--bg">
+              <span>Отправить</span>
+            </button>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="popup popup--big popup-productcard" id="popup-productcard">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <h2>Террасная доска Триумф Слим</h2>
+        <!-- productcard -->
+        <div class="productcard">
+          <!-- IMG -->
+          <div class="productcard__img">
+            <i>
+              <img src="img/product-1.jpg" alt="IMG">
+            </i>
+          </div>
+
+          <!-- Content -->
+          <div class="productcard__content">
+
+            <!-- color -->
+            <div class="sec-color">
+              <h4>Варианты цветов:</h4>
+              <div class="select-color select-color--horz">
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-1">
+                  <label for="sel-color-prodyctcard-1" style="color: #8E7D63"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-2">
+                  <label for="sel-color-prodyctcard-2" style="color: #000000"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-3">
+                  <label for="sel-color-prodyctcard-3" style="color: #838582"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-4">
+                  <label for="sel-color-prodyctcard-4" style="color: #8B705B"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-5">
+                  <label for="sel-color-prodyctcard-5" style="color: #8C624C"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-6">
+                  <label for="sel-color-prodyctcard-6" style="color: #D5C4AA"></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec-width">
+              <h4>Длина:</h4>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-1" required>
+                <label for="input-select-productcard-1">
+                  <span>3 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-2" required>
+                <label for="input-select-productcard-2">
+                  <span>4 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-3" required>
+                <label for="input-select-productcard-3">
+                  <span>5 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-4" required>
+                <label for="input-select-productcard-4">
+                  <span>6 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-5" required>
+                <label for="input-select-productcard-5">
+                  <span>Другая</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="label-title-info">
+              <h4>Размер профиля:</h4>
+              <span>140x25</span>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+
+            <div class="label-title-info">
+              <h4>Вес м.п/кг:</h4>
+              <span>1.9 кг</span>
+            </div>
+
+            <div class="label-title-info">
+              <h4>Эксплуатационная нагрузка:</h4>
+              <span>до 500 кг на м2</span>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+
+            <!-- <div class="label-title-info">
+              <h4>Покрытие:</h4>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cum obcaecati fugit perferendis
+                  impedit consequuntur ullam nemo velit natus, alias laudantium accusantium laboriosam, voluptatem
+                  deserunt quos? Consequatur quam ipsa alias?</p>
+              </div>
+            </div> -->
+
+
+            <div class="sec-width">
+              <h4>Покрытие:</h4>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-1" required>
+                <label for="input-coating-productcard-1">
+                  <span>Start</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-2" required>
+                <label for="input-coating-productcard-2">
+                  <span>Velvet</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-3" required>
+                <label for="input-coating-productcard-3">
+                  <span>Wood</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-4" required>
+                <label for="input-coating-productcard-4">
+                  <span>Max</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-5" required>
+                <label for="input-coating-productcard-5">
+                  <span>Не знаю</span>
+                </label>
+              </div>
+            </div>
+
+            <h4>Дополнительные комплектующие:</h4>
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-klaimer" id="input-check-klaimer">
+              <label for="input-check-klaimer">
+                <span>Кляймер (крепление) — <b>15</b>&nbsp;₽/шт</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-montaj" id="input-check-montaj">
+              <label for="input-check-montaj">
+                <span>Монтажная лага — <b>150</b>&nbsp;₽/пог.&nbsp;м</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-tortplank" id="input-check-tortplank">
+              <label for="input-check-tortplank">
+                <span>Торцевая планка — <b>170</b>&nbsp;₽/пог.&nbsp;м</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-dekor" id="input-check-dekor">
+              <label for="input-check-dekor">
+                <span>Декоративный уголок — <b>170</b>&nbsp;₽/пог.&nbsp;м</span>
+              </label>
+            </div>
+
+            <div class="productcard__footer">
+              <em>
+                <b>1 405</b>
+                ₽/м2
+              </em>
+
+              <button type="submit" class="btn btn--dark">
+                <span>Заказать в 1 клик</span>
+              </button>
+            </div>
+
+          </div>
+        </div>  
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

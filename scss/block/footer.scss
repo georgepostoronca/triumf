@@ -1,6 +1,11 @@
 footer {
     padding-top: 52px;
     padding-bottom: 53px;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
 
     @media(max-width: 768px) {
         padding-top: 30px;
@@ -29,7 +34,7 @@ footer {
         color: $gray-text;
 
         @media(max-width: 580px) {
-            font-size: 14px;
+            font-size: 12px;
             line-height: 18px;
         }
     }

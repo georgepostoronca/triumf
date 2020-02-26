@@ -688,7 +688,7 @@
         border-radius: 100%;
         font-size: 0;
         color: transparent;
-        left: -33px;
+        right: -33px;
         margin-top: -56px;
         transition: .2s;
 
@@ -705,7 +705,7 @@
         @media(max-width: 567px) {
             width: 40px;
             height: 40px;
-            left: -15px;
+            right: -15px;
             margin-top: -50px;
         }
 
@@ -718,13 +718,13 @@
             background: url("../svg/arrow-orange.svg") center center no-repeat;
             position: absolute;
             top: 50%;
-            right: 20px;
-            transform: translateY(-50%) rotate(180deg);
+            left: 20px;
+            transform: translateY(-50%);
 
             @media(max-width: 567px) {
                 width: 9px;
                 height: 14px;
-                right: 12px;
+                left: 12px;
             }
         }
 
@@ -742,7 +742,7 @@
         border-radius: 100%;
         font-size: 0;
         color: transparent;
-        right: -33px;
+        left: -33px;
         margin-top: -56px;
 
         &.swiper-button-disabled {
@@ -752,7 +752,7 @@
         @media(max-width: 567px) {
             width: 40px;
             height: 40px;
-            right: -15px;
+            left: -15px;
             margin-top: -50px;
         }
 
@@ -771,14 +771,14 @@
             background: url("../svg/arrow-orange.svg") center center no-repeat;
             position: absolute;
             top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
+            right: 20px;
+            transform: translateY(-50%)  rotate(180deg);
             transition: .2s;
 
             @media(max-width: 567px) {
                 width: 9px;
                 height: 14px;
-                left: 12px;
+                right: 12px;
             }
         }
     }

@@ -1,246 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Triumf</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet" async>
-    <link rel="stylesheet" href="css/main.css">
 
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triumf</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic"
+    rel="stylesheet" async>
+  <link rel="stylesheet" href="css/main.css">
 
-    
+</head>
 
-    <div id="wrapper">
+<body>
 
-      <menu class="menu">
-        <div class="container">
-          <div class="menu__wrap">
-            <div class="menu__logo">
-              <a href="/">
-                <img src="svg/logo.svg" alt="IMG">
-              </a>
-            </div>
 
-            <div class="menu__info">
-              <div class="menu__contact">
-                <div class="menu__phone">
-                  <div class="menu__phone__wrap">
-                    <span>Продажа террасной доски ДПК</span>
-  
-                    <div>
-                      <a href="tel:+7-929-604-89-52" class="label-phone">
-                        <svg class="icon">
-                          <use xlink:href="svg/sprite/sprite.svg#phone"></use>
-                        </svg>
-                        <span>+7 929 604-89-52</span>
-                      </a>
-                    </div>
+
+  <div id="wrapper">
+
+    <menu class="menu">
+      <div class="container">
+        <div class="menu__wrap">
+          <div class="menu__logo">
+            <a href="/">
+              <img src="svg/logo.svg" alt="IMG">
+            </a>
+          </div>
+
+          <div class="menu__info">
+            <div class="menu__contact">
+              <div class="menu__phone">
+                <div class="menu__phone__wrap">
+                  <span>Продажа террасной доски ДПК</span>
+
+                  <div>
+                    <a href="tel:+7-929-604-89-52" class="label-phone">
+                      <svg class="icon">
+                        <use xlink:href="svg/sprite/sprite.svg#phone"></use>
+                      </svg>
+                      <span>+7 929 604-89-52</span>
+                    </a>
                   </div>
-                </div>
-
-                <div class="menu__btn">
-                  <div class="btn"><span>Обратный звонок</span></div>
-                  <div class="btn btn--border"><span>Просчитать стоимость</span></div>
                 </div>
               </div>
 
-              <div class="menu__nav">
-                <nav>
-                  <a href="#Каталог">Каталог</a>
-                  <a href="#Для-партнеров">Для партнеров</a>
-                  <a href="#Как-мы-работаем">Как мы работаем</a>
-                  <a href="#О-террасной-доске-ДКП">О террасной доске ДКП</a>
-                  <a href="#О-нас">О нас</a>
-                  <a href="#Контакты">Контакты</a>
-                </nav>
-
+              <div class="menu__btn">
                 <div class="btn"><span>Обратный звонок</span></div>
                 <div class="btn btn--border"><span>Просчитать стоимость</span></div>
               </div>
-              
-              <div class="menu__navbtn">
-                <span></span>
-              </div>
-
             </div>
+
+            <div class="menu__nav">
+              <nav>
+                <a href="#Каталог">Каталог</a>
+                <a href="#Для-партнеров">Для партнеров</a>
+                <a href="#Как-мы-работаем">Как мы работаем</a>
+                <a href="#О-террасной-доске-ДКП">О террасной доске ДКП</a>
+                <a href="#О-нас">О нас</a>
+                <a href="#Контакты">Контакты</a>
+              </nav>
+
+              <div class="btn"><span>Обратный звонок</span></div>
+              <div class="btn btn--border"><span>Просчитать стоимость</span></div>
+            </div>
+
+            <div class="menu__navbtn">
+              <span></span>
+            </div>
+
           </div>
         </div>
-      </menu>
-
-        <section class="popup-block">
-            <div class="container">
-                <button data-fancybox data-src="#popup-commercial">Получить коммерческое предложение</button>
-                <button data-fancybox data-src="#popup-freeconsult">Получить бесплатную консультацию</button>
-                <button data-fancybox data-src="#popup-callback">Обратный звонок</button>
-                <button data-fancybox data-src="#popup-success">Спасибо!</button>
-            </div>
-        </section>
-
-      <div class="popup" id="popup-commercial">
-          <div class="popup__container">
-            <form action="" class="form-validation">
-              <h2>Получить коммерческое предложение</h2>
-
-              <div class="block-radio block-radio--light">
-                <input type="radio" name="type-user-commercial" id="input-fiz-commercial" required>
-                <label for="input-fiz-commercial">
-                  <span>Физическое лицо</span>
-                </label>
-              </div>
-
-              <div class="block-radio block-radio--light">
-                <input type="radio" name="type-user-commercial" id="input-iur-commercial-2" required>
-                <label for="input-iur-commercial-2">
-                  <span>Юридическое лицо</span>
-                </label>
-              </div>
-
-              <div class="input-block">
-                <input type="text" name="name" class="js__input-focus" required>
-                <span>Представьтесь</span>
-              </div>
-
-              <div class="input-block">
-                <input type="phone" name="phone" class="js__input-focus" required>
-                <span>Телефон</span>
-              </div>
-
-              <div class="input-file">
-                <label for="input-popup-file-1">
-                  <input type="file" id="input-popup-file-1" class="js__input-file">
-                  <svg class="icon">
-                    <use xlink:href="svg/sprite/sprite.svg#link"></use>
-                  </svg>
-                  <span>Прикрепить файл</span>
-                </label>
-              </div>
-
-              <div class="block-check block-check--orange">
-                <input type="checkbox" name="personal-data" id="inut-personal-data-commercial" required>
-                <label for="inut-personal-data-commercial">
-                  <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn--bg">
-                <span>Отправить</span>
-              </button>
-            </form>
-          </div>
       </div>
-    
-      <div class="popup" id="popup-freeconsult">
-          <div class="popup__container">
-            <form action="" class="form-validation">
-              <h2>Получить бесплатную консультацию</h2>
+    </menu>
 
-              <div class="block-radio block-radio--light">
-                <input type="radio" name="type-freeconsult" id="input-fiz-freeconsult" required>
-                <label for="input-fiz-freeconsult">
-                  <span>Физическое лицо</span>
-                </label>
-              </div>
-
-              <div class="block-radio block-radio--light">
-                <input type="radio" name="type-freeconsult" id="input-iur-freeconsult-2" required>
-                <label for="input-iur-freeconsult-2">
-                  <span>Юридическое лицо</span>
-                </label>
-              </div>
-
-              <div class="input-block">
-                <input type="text" name="name" class="js__input-focus" required>
-                <span>Представьтесь</span>
-              </div>
-
-              <div class="input-block">
-                <input type="phone" name="phone" class="js__input-focus" required>
-                <span>Телефон</span>
-              </div>
-
-              <div class="input-file">
-                <label for="input-popup-file-1">
-                  <input type="file" id="input-popup-file-1" class="js__input-file">
-                  <svg class="icon">
-                    <use xlink:href="svg/sprite/sprite.svg#link"></use>
-                  </svg>
-                  <span>Прикрепить файл</span>
-                </label>
-              </div>
-
-              <div class="block-check block-check--orange">
-                <input type="checkbox" name="personal-data" id="inut-personal-data-freeconsult" required>
-                <label for="inut-personal-data-freeconsult">
-                  <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn--bg">
-                <span>Отправить</span>
-              </button>
-            </form>
-          
-          </div>
+    <section class="popup-block">
+      <div class="container">
+        <button data-fancybox data-src="#popup-commercial">Получить коммерческое предложение</button>
+        <button data-fancybox data-src="#popup-freeconsult">Получить бесплатную консультацию</button>
+        <button data-fancybox data-src="#popup-callback">Обратный звонок</button>
+        <button data-fancybox data-src="#popup-success">Спасибо!</button>
+        <br>
+        <button data-fancybox data-src="#popup-calculator">Calculator</button>
+        <br>
+        <button data-fancybox data-src="#popup-productcard">ProductCard</button>
       </div>
+  </div>
+  </section>
 
+  <div class="popup" id="popup-commercial">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <h2>Получить коммерческое предложение</h2>
 
-      <div class="popup" id="popup-callback">
-          <div class="popup__container">
-            <form action="" class="form-validation">
-              <h2>Обратный звонок</h2>
-
-              <div class="input-block">
-                <input type="text" name="name" class="js__input-focus" required>
-                <span>Представьтесь</span>
-              </div>
-
-              <div class="input-block">
-                <input type="phone" name="phone" class="js__input-focus" required>
-                <span>Телефон</span>
-              </div>
-
-              <div class="block-check block-check--orange">
-                <input type="checkbox" name="personal-data" id="inut-personal-data-callback" required>
-                <label for="inut-personal-data-callback">
-                  <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn--bg">
-                <span>Отправить</span>
-              </button>
-            </form>
-          
-          </div>
-      </div>
-
-      <div class="popup" id="popup-success">
-          <div class="popup__container">
-            <form action="" class="form-validation">
-              <i>
-                <svg class="icon">
-                  <use xlink:href="svg/sprite/sprite.svg#telegram"></use>
-                </svg>
-              </i>
-              <h2>Спасибо! В ближайшее время мы свяжемся с вами</h2>
-            </form>
-          
-          </div>
-      </div>
-    
-      <!-- Footer -->
-      <footer>
-        <div class="container">
-          <span>2020, ТриумДПК</span>
-          <em>Политика конфиденциальности</em>
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-user-commercial" id="input-fiz-commercial" required>
+          <label for="input-fiz-commercial">
+            <span>Физическое лицо</span>
+          </label>
         </div>
-      </footer>
+
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-user-commercial" id="input-iur-commercial-2" required>
+          <label for="input-iur-commercial-2">
+            <span>Юридическое лицо</span>
+          </label>
+        </div>
+
+        <div class="input-block">
+          <input type="text" name="name" class="js__input-focus" required>
+          <span>Представьтесь</span>
+        </div>
+
+        <div class="input-block">
+          <input type="phone" name="phone" class="js__input-focus" required>
+          <span>Телефон</span>
+        </div>
+
+        <div class="input-file">
+          <label for="input-popup-file-2">
+            <input type="file" id="input-popup-file-2" class="js__input-file">
+            <svg class="icon">
+              <use xlink:href="svg/sprite/sprite.svg#link"></use>
+            </svg>
+            <span>Прикрепить файл</span>
+          </label>
+        </div>
+
+        <div class="block-check block-check--orange">
+          <input type="checkbox" name="personal-data" id="inut-personal-data-commercial" required>
+          <label for="inut-personal-data-commercial">
+            <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--bg">
+          <span>Отправить</span>
+        </button>
+      </form>
     </div>
+  </div>
+
+  <div class="popup" id="popup-freeconsult">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <h2>Получить бесплатную консультацию</h2>
+
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-freeconsult" id="input-fiz-freeconsult" required>
+          <label for="input-fiz-freeconsult">
+            <span>Физическое лицо</span>
+          </label>
+        </div>
+
+        <div class="block-radio block-radio--light">
+          <input type="radio" name="type-freeconsult" id="input-iur-freeconsult-2" required>
+          <label for="input-iur-freeconsult-2">
+            <span>Юридическое лицо</span>
+          </label>
+        </div>
+
+        <div class="input-block">
+          <input type="text" name="name" class="js__input-focus" required>
+          <span>Представьтесь</span>
+        </div>
+
+        <div class="input-block">
+          <input type="phone" name="phone" class="js__input-focus" required>
+          <span>Телефон</span>
+        </div>
+
+        <div class="input-file">
+          <label for="input-popup-file-10">
+            <input type="file" id="input-popup-file-10" class="js__input-file">
+            <svg class="icon">
+              <use xlink:href="svg/sprite/sprite.svg#link"></use>
+            </svg>
+            <span>Прикрепить файл</span>
+          </label>
+        </div>
+
+        <div class="block-check block-check--orange">
+          <input type="checkbox" name="personal-data" id="inut-personal-data-freeconsult" required>
+          <label for="inut-personal-data-freeconsult">
+            <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--bg">
+          <span>Отправить</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-callback">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <h2>Обратный звонок</h2>
+
+        <div class="input-block">
+          <input type="text" name="name" class="js__input-focus" required>
+          <span>Представьтесь</span>
+        </div>
+
+        <div class="input-block">
+          <input type="phone" name="phone" class="js__input-focus" required>
+          <span>Телефон</span>
+        </div>
+
+        <div class="block-check block-check--orange">
+          <input type="checkbox" name="personal-data" id="inut-personal-data-callback" required>
+          <label for="inut-personal-data-callback">
+            <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--bg">
+          <span>Отправить</span>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="popup" id="popup-success">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <i class="ico">
+          <svg class="icon">
+            <use xlink:href="svg/sprite/sprite.svg#telegram"></use>
+          </svg>
+        </i>
+        <h2>Спасибо! В ближайшее время мы свяжемся с вами</h2>
+      </form>
+
+    </div>
+  </div>
 
 
-    <script src="js/script.js"></script>
-  </body>
+
+  <div class="popup popup--big popup-calculator" id="popup-calculator">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <div class="calculator">
+
+          <!-- Elements -->
+          <div class="calculator__el">
+            <h4>Вид доски:</h4>
+            <div class="customselect">
+              <input class="customselect__flag" type="checkbox" id="customselect-1">
+              <label class="customselect__current" for="customselect-1">
+                <i>
+                  <img src="img/product-1.jpg" alt="IMG">
+                </i>
+                <span>Террасная доска Триумф</span>
+
+                <svg class="icon">
+                  <use xlink:href="svg/sprite/sprite.svg#arrow-2"></use>
+                </svg>
+              </label>
+              <div class="customselect__content">
+                <label for="triumf-slim">
+                  <input type="radio" class="customselect__option" name="select-board" id="triumf-slim"
+                    data-ico="img/product-1.jpg" data-text="Террасная доска Триумф Слим">
+                  <i>
+                    <img src="img/product-1.jpg" alt="IMG">
+                  </i>
+                  <span>Террасная доска Триумф Слим</span>
+                </label>
+
+                <label for="triumf-eco">
+                  <input type="radio" class="customselect__option" name="select-board" id="triumf-eco"
+                    data-ico="img/product-2.jpg" data-text="Террасная доска Триумф Эко">
+                  <i>
+                    <img src="img/product-2.jpg" alt="IMG">
+                  </i>
+                  <span>Террасная доска Триумф Эко</span>
+                </label>
+
+                <label for="triumf-triumf">
+                  <input type="radio" class="customselect__option" name="select-board" id="triumf-triumf"
+                    data-ico="img/product-3.jpg" data-text="Террасная доска Триумф">
+                  <i>
+                    <img src="img/product-3.jpg" alt="IMG">
+                  </i>
+                  <span>Террасная доска Триумф</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="sec-color">
+              <h4>Цвет:</h4>
+              <div class="select-color select-color--horz">
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-1">
+                  <label for="sel-color-pop-1" style="color: #8E7D63"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-2">
+                  <label for="sel-color-pop-2" style="color: #000000"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-3">
+                  <label for="sel-color-pop-3" style="color: #838582"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-4">
+                  <label for="sel-color-pop-4" style="color: #8B705B"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-5">
+                  <label for="sel-color-pop-5" style="color: #8C624C"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-pop-1" id="sel-color-pop-6">
+                  <label for="sel-color-pop-6" style="color: #D5C4AA"></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec-size">
+              <h4>Размер:</h4>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-size-pop-1" id="input-select-size-1" required>
+                <label for="input-select-size-1">
+                  <span>140x25</span>
+                </label>
+
+                <input type="radio" name="select-size-pop-1" id="input-select-size-2" required>
+                <label for="input-select-size-2">
+                  <span>140x18</span>
+                </label>
+
+                <input type="radio" name="select-size-pop-1" id="input-select-size-3" required>
+                <label for="input-select-size-3">
+                  <span>136x25</span>
+                </label>
+
+                <input type="radio" name="select-size-pop-1" id="input-select-size-4" required>
+                <label for="input-select-size-4">
+                  <span>Другой</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="sec-width">
+              <h4>Длина:</h4>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-width-pop-1" id="input-select-width-1" required>
+                <label for="input-select-width-1">
+                  <span>1 м</span>
+                </label>
+
+                <input type="radio" name="select-width-pop-1" id="input-select-width-2" required>
+                <label for="input-select-width-2">
+                  <span>2 м</span>
+                </label>
+
+                <input type="radio" name="select-width-pop-1" id="input-select-width-3" required>
+                <label for="input-select-width-3">
+                  <span>3 м</span>
+                </label>
+
+                <input type="radio" name="select-width-pop-1" id="input-select-width-4" required>
+                <label for="input-select-width-4">
+                  <span>Другая</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-block">
+              <input type="text" name="set-width" class="js__input-focus" required>
+              <span>Введите длину</span>
+            </div>
+
+            <div class="sec-krep">
+              <h4>
+                Крепление:
+                <div class="info">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cum obcaecati fugit perferendis
+                    impedit consequuntur ullam nemo velit natus, alias laudantium accusantium laboriosam, voluptatem
+                    deserunt quos? Consequatur quam ipsa alias?</p>
+                </div>
+              </h4>
+
+              <div class="select-size">
+                <input type="radio" name="select-yesno-pop-1" id="input-select-yesno-1" required>
+                <label for="input-select-yesno-1">
+                  <span>Да</span>
+                </label>
+
+                <input type="radio" name="select-yesno-pop-1" id="input-select-yesno-2" required>
+                <label for="input-select-yesno-2">
+                  <span>Нет</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="sec-perim">
+              <h4>Поверхность строения, м2</h4>
+              <div class="input-block">
+                <input type="text" name="set-perim" class="js__input-focus" required>
+                <span>Введите значение</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aside -->
+          <div class="calculator__aside">
+            <h3>Ваши данные</h3>
+            <div class="block-radio block-radio--light">
+              <input type="radio" name="type-consult" id="input-fiz-consult" required>
+              <label for="input-fiz-consult">
+                <span>Физическое лицо</span>
+              </label>
+            </div>
+
+            <div class="block-radio block-radio--light">
+              <input type="radio" name="type-consult" id="input-iur-consult-2" required>
+              <label for="input-iur-consult-2">
+                <span>Юридическое лицо</span>
+              </label>
+            </div>
+
+            <div class="input-block">
+              <input type="text" name="name" class="js__input-focus" required>
+              <span>Представьтесь</span>
+            </div>
+
+            <div class="input-block">
+              <input type="phone" name="phone" class="js__input-focus" required>
+              <span>Телефон</span>
+            </div>
+
+            <div class="input-file">
+              <label for="input-popup-file-1">
+                <input type="file" id="input-popup-file-1" class="js__input-file">
+                <svg class="icon">
+                  <use xlink:href="svg/sprite/sprite.svg#link"></use>
+                </svg>
+                <span>Прикрепить файл</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="personal-data" id="inut-personal-data-calculator" required>
+              <label for="inut-personal-data-calculator">
+                <span>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--bg">
+              <span>Отправить</span>
+            </button>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="popup popup--big popup-productcard" id="popup-productcard">
+    <div class="popup__container">
+      <form action="" class="form-validation">
+        <h2>Террасная доска Триумф Слим</h2>
+        <!-- productcard -->
+        <div class="productcard">
+          <!-- IMG -->
+          <div class="productcard__img">
+            <i>
+              <img src="img/product-1.jpg" alt="IMG">
+            </i>
+          </div>
+
+          <!-- Content -->
+          <div class="productcard__content">
+
+            <!-- color -->
+            <div class="sec-color">
+              <h4>Варианты цветов:</h4>
+              <div class="select-color select-color--horz">
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-1">
+                  <label for="sel-color-prodyctcard-1" style="color: #8E7D63"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-2">
+                  <label for="sel-color-prodyctcard-2" style="color: #000000"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-3">
+                  <label for="sel-color-prodyctcard-3" style="color: #838582"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-4">
+                  <label for="sel-color-prodyctcard-4" style="color: #8B705B"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-5">
+                  <label for="sel-color-prodyctcard-5" style="color: #8C624C"></label>
+                </div>
+
+                <div class="select-color__item">
+                  <input type="radio" name="sel-color-productcard" id="sel-color-prodyctcard-6">
+                  <label for="sel-color-prodyctcard-6" style="color: #D5C4AA"></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec-width">
+              <h4>Длина:</h4>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-1" required>
+                <label for="input-select-productcard-1">
+                  <span>3 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-2" required>
+                <label for="input-select-productcard-2">
+                  <span>4 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-3" required>
+                <label for="input-select-productcard-3">
+                  <span>5 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-4" required>
+                <label for="input-select-productcard-4">
+                  <span>6 м</span>
+                </label>
+
+                <input type="radio" name="select-width-productcard" id="input-select-productcard-5" required>
+                <label for="input-select-productcard-5">
+                  <span>Другая</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="label-title-info">
+              <h4>Размер профиля:</h4>
+              <span>140x25</span>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+
+            <div class="label-title-info">
+              <h4>Вес м.п/кг:</h4>
+              <span>1.9 кг</span>
+            </div>
+
+            <div class="label-title-info">
+              <h4>Эксплуатационная нагрузка:</h4>
+              <span>до 500 кг на м2</span>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+
+            <!-- <div class="label-title-info">
+              <h4>Покрытие:</h4>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cum obcaecati fugit perferendis
+                  impedit consequuntur ullam nemo velit natus, alias laudantium accusantium laboriosam, voluptatem
+                  deserunt quos? Consequatur quam ipsa alias?</p>
+              </div>
+            </div> -->
+
+
+            <div class="sec-width">
+              <h4>Покрытие:</h4>
+              <div class="info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+
+              <div class="select-size select-size--four">
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-1" required>
+                <label for="input-coating-productcard-1">
+                  <span>Start</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-2" required>
+                <label for="input-coating-productcard-2">
+                  <span>Velvet</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-3" required>
+                <label for="input-coating-productcard-3">
+                  <span>Wood</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-4" required>
+                <label for="input-coating-productcard-4">
+                  <span>Max</span>
+                </label>
+
+                <input type="radio" name="select-coating-productcard" id="input-coating-productcard-5" required>
+                <label for="input-coating-productcard-5">
+                  <span>Не знаю</span>
+                </label>
+              </div>
+            </div>
+
+            <h4>Дополнительные комплектующие:</h4>
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-klaimer" id="input-check-klaimer">
+              <label for="input-check-klaimer">
+                <span>Кляймер (крепление) — <b>15</b>&nbsp;₽/шт</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-montaj" id="input-check-montaj">
+              <label for="input-check-montaj">
+                <span>Монтажная лага — <b>150</b>&nbsp;₽/пог.&nbsp;м</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-tortplank" id="input-check-tortplank">
+              <label for="input-check-tortplank">
+                <span>Торцевая планка — <b>170</b>&nbsp;₽/пог.&nbsp;м</span>
+              </label>
+            </div>
+
+            <div class="block-check block-check--orange">
+              <input type="checkbox" name="input-check-dekor" id="input-check-dekor">
+              <label for="input-check-dekor">
+                <span>Декоративный уголок — <b>170</b>&nbsp;₽/пог.&nbsp;м</span>
+              </label>
+            </div>
+
+            <div class="productcard__footer">
+              <em>
+                <b>1 405</b>
+                ₽/м2
+              </em>
+
+              <button type="submit" class="btn btn--dark">
+                <span>Заказать в 1 клик</span>
+              </button>
+            </div>
+
+          </div>
+        </div>  
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <span>2020, ТриумДПК</span>
+      <em>Политика конфиденциальности</em>
+    </div>
+  </footer>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
