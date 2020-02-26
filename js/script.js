@@ -452,6 +452,10 @@ $(".js__change-img").on("change", function() {
 	$(this).closest(".catalog__item-img").find(".js__change-block").attr("src", "img/color/" + $(this).val());
 });
 
+$(".js__change-imgprod").on("change", function() {
+	$(this).closest(".popup__container").find(".js__change-block-prod").attr("src", "img/color/" + $(this).val());
+});
+
 
 var reviewActive = 0;
 var review = [
