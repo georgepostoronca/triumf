@@ -449,6 +449,24 @@ $("#up").click(function() {
 // });
 
 $(".js__change-img").on("change", function() {
-	console.log($(this).val())
 	$(this).closest(".catalog__item-img").find(".js__change-block").attr("src", "img/color/" + $(this).val());
+});
+
+
+var reviewActive = 0;
+var review = [
+	{
+		name: "Максим Зверев",
+		text: "Занимаюсь строительством более 10 лет, с террасной доской из ДПК знаком 3 года. ТриумфДПК купил заказчик, смонтировали, потом соседу его тоже самое сделали, каждый год у них беру на 2-3 объекта и скажу что нормальная!\n"
+	},
+	{
+		name: "Геннадий Свиридов\n",
+		text: "Получил образец доски Триумф эко. Доска плотная, тяжелая и крепкая, пробовал поломать руками - не получилось. Тиснение объемное, как у корейской, которая стоит в два раза дороже.\n"
+	}
+]
+$(".js__next-rewiew").click(function() {
+	if(reviewActive >= review.length) return;
+	$(".review__item-name").text(review[reviewActive].name);
+	$(".review__item-text").text(review[reviewActive].text);
+	reviewActive++;
 });
