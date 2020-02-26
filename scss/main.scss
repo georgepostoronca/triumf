@@ -631,6 +631,11 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
         cursor: pointer;
         margin-bottom: 0;
         background-color: currentColor;
+
+        @media(max-width: 768px) {
+            width: 15px;
+            height: 15px;
+        }
     }
     
     input {
