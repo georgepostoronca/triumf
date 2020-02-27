@@ -462,8 +462,12 @@ $(".js__change-imgprod").on("change", function() {
 });
 
 
-var reviewActive = 0;
+var reviewActive = 1;
 var review = [
+	{
+		name: "Алина Мишина",
+		text: "Не выгорает, не ведет, нет заноз, насекомые не жрут, не гниет, не горит. Цвет надо было взять посветлее, ногам горячо в жару. Жир плохо отмывается."
+	},
 	{
 		name: "Максим Зверев",
 		text: "Занимаюсь строительством более 10 лет, с террасной доской из ДПК знаком 3 года. ТриумфДПК купил заказчик, смонтировали, потом соседу его тоже самое сделали, каждый год у них беру на 2-3 объекта и скажу что нормальная!\n"
@@ -474,7 +478,8 @@ var review = [
 	}
 ]
 $(".js__next-rewiew").click(function() {
-	if(reviewActive >= review.length) return;
+	// console.log(reviewActive)
+	if(reviewActive >= review.length) reviewActive = 0;
 	$(".review__item-name").text(review[reviewActive].name);
 	$(".review__item-text").text(review[reviewActive].text);
 	reviewActive++;
