@@ -493,10 +493,11 @@ $(".js__next-rewiew").click(function() {
 // 	};
 // };
 
-$(".js__calc-select-size").on("click", function() {
+$(".js__calc-select-size input").on("change", function() {
 	// console.log($(this).index());
-	$(".js__calc-input-size label").hide();
-	$(".js__calc-input-size input").eq($(this).index()).prop("checked", true);
-	$(".js__calc-input-size label").eq($(this).index()).show();
-	$(".js__calc-input-size .other").show();
+	// $(".js__calc-input-size label").hide();
+	// $(".js__calc-input-size input").eq($(this).index()).prop("checked", true);
+	// $(".js__calc-input-size label").eq($(this).index()).show();
+	// $(".js__calc-input-size .other").show();
+	$(".js__calc-input-size > span").text($(this).val());
 })

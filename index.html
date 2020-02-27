@@ -193,7 +193,7 @@
                   <div class="label">Собственное производство</div>
                   <em>Террасная доска</em>
                   <span>Триумф</span>
-                  <b>1 500 <em>₽/м2</em></b>
+                  <b>1 550 <em>₽/м2</em></b>
                 </div>
                 
                 <!-- BTN -->
@@ -252,7 +252,7 @@
                   <div class="label">Собственное производство</div>
                   <em>Террасная доска</em>
                   <span>Триумф Слим</span>
-                  <b>1 115р <em>₽/м2</em></b>
+                  <b>1 300р <em>₽/м2</em></b>
                 </div>
                 
                 <!-- BTN -->
@@ -312,7 +312,7 @@
                   <div class="label">Собственное производство</div>
                   <em>Террасная доска</em>
                   <span>Триумф Эко</span>
-                  <b>1 350 <em>₽/м2</em></b>
+                  <b>1 500 <em>₽/м2</em></b>
                 </div>
                 
                 <!-- BTN -->
@@ -886,7 +886,7 @@
                     <div class="swiper-slide">
                       <div class="howwork-slider__item">
                         <b>02.</b>
-                        <span>Замер площадки</span>
+                        <span>Замер площадки(не обязательно)</span>
                         <p>Специалист проведет точный расчет площадки и сообщит конечную стоимость материалов</p>
                       </div>
                     </div>
@@ -1444,7 +1444,7 @@
               </label>
               <div class="customselect__content">
                 <label for="triumf-slim"  class="js__calc-select-size">
-                  <input type="radio" class="customselect__option" name="select-board" id="triumf-slim"
+                  <input type="radio" class="customselect__option" value="140х18 мм" name="select-board" id="triumf-slim"
                     data-ico="img/product-1.jpg" data-text="Террасная доска Триумф Слим">
                   <i>
                     <img src="img/product-1.jpg" alt="IMG">
@@ -1453,7 +1453,7 @@
                 </label>
 
                 <label for="triumf-eco"  class="js__calc-select-size">
-                  <input type="radio" class="customselect__option" name="select-board" id="triumf-eco"
+                  <input type="radio" class="customselect__option" value="136х25мм" name="select-board" id="triumf-eco"
                     data-ico="img/product-2.jpg" data-text="Террасная доска Триумф Эко">
                   <i>
                     <img src="img/product-2.jpg" alt="IMG">
@@ -1462,7 +1462,7 @@
                 </label>
 
                 <label for="triumf-triumf"  class="js__calc-select-size">
-                  <input type="radio" class="customselect__option" name="select-board" id="triumf-triumf"
+                  <input type="radio" class="customselect__option" value="140х25 мм" name="select-board" id="triumf-triumf"
                     data-ico="img/product-3.jpg" data-text="Террасная доска Триумф">
                   <i>
                     <img src="img/product-3.jpg" alt="IMG">
@@ -1508,29 +1508,33 @@
             </div>
 
             <div class="sec-size">
-              <h4>Размер:</h4>
+<!--              <h4>Размер:</h4>-->
 
-              <div class="select-size select-size--four js__calc-input-size">
-                <input type="radio" name="select-size-pop-1" id="input-select-size-1" required checked>
-                <label for="input-select-size-1">
-                  <span>140х18 мм </span>
-                </label>
-
-                <input type="radio" name="select-size-pop-1" id="input-select-size-2"  required>
-                <label for="input-select-size-2" style="display: none;">
-                  <span>136х25мм</span>
-                </label>
-
-                <input type="radio" name="select-size-pop-1" id="input-select-size-3"  required>
-                <label for="input-select-size-3" style="display: none;">
-                  <span>140х25 мм</span>
-                </label>
-
-                <input type="radio" name="select-size-pop-1" id="input-select-size-4" required>
-                <label for="input-select-size-4" class="other">
-                  <span>Другой</span>
-                </label>
+              <div class="label-title-info js__calc-input-size">
+                <h4>Размер:</h4>
+                <span>140х18 мм</span>
               </div>
+<!--              <div class="select-size select-size&#45;&#45;four js__calc-input-size">-->
+<!--                <input type="radio" name="select-size-pop-1" id="input-select-size-1" required checked>-->
+<!--                <label for="input-select-size-1">-->
+<!--                  <span>140х18 мм </span>-->
+<!--                </label>-->
+
+<!--                <input type="radio" name="select-size-pop-1" id="input-select-size-2"  required>-->
+<!--                <label for="input-select-size-2" style="display: none;">-->
+<!--                  <span>136х25мм</span>-->
+<!--                </label>-->
+
+<!--                <input type="radio" name="select-size-pop-1" id="input-select-size-3"  required>-->
+<!--                <label for="input-select-size-3" style="display: none;">-->
+<!--                  <span>140х25 мм</span>-->
+<!--                </label>-->
+
+<!--                <input type="radio" name="select-size-pop-1" id="input-select-size-4" required>-->
+<!--                <label for="input-select-size-4" class="other">-->
+<!--                  <span>Другой</span>-->
+<!--                </label>-->
+<!--              </div>-->
             </div>
 
             <div class="sec-width">
@@ -1552,10 +1556,10 @@
                   <span>6 м</span>
                 </label>
 
-<!--                <input type="radio" name="select-width-pop-1" id="input-select-width-4" required>-->
-<!--                <label for="input-select-width-4">-->
-<!--                  <span>Другая</span>-->
-<!--                </label>-->
+                <input type="radio" name="select-width-pop-1" id="input-select-width-4" required>
+                <label for="input-select-width-4">
+                  <span>Другая</span>
+                </label>
               </div>
             </div>
 
@@ -1672,32 +1676,32 @@
               <div class="select-color select-color--horz">
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="venge.jpg" id="sel-color-prodyctcard-1" checked>
-                  <label for="sel-color-prodyctcard-1" style="color: #362827"></label>
+                  <label for="sel-color-prodyctcard-1" style="color: #362827" data-text="Венге"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="chocolate.jpg" id="sel-color-prodyctcard-2">
-                  <label for="sel-color-prodyctcard-2" style="color: #592301"></label>
+                  <label for="sel-color-prodyctcard-2" style="color: #592301" data-text="Шоколад"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="silver.jpg" id="sel-color-prodyctcard-3">
-                  <label for="sel-color-prodyctcard-3" style="color: #838582"></label>
+                  <label for="sel-color-prodyctcard-3" style="color: #838582" data-text="Серый"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="black.jpg" id="sel-color-prodyctcard-4">
-                  <label for="sel-color-prodyctcard-4" style="color: #000000"></label>
+                  <label for="sel-color-prodyctcard-4" style="color: #000000" data-text="Черный"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="terakot.jpg" id="sel-color-prodyctcard-5">
-                  <label for="sel-color-prodyctcard-5" style="color: #CC633C"></label>
+                  <label for="sel-color-prodyctcard-5" style="color: #CC633C" data-text="Терракот"></label>
                 </div>
 
                 <div class="select-color__item">
                   <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="natur.jpg" id="sel-color-prodyctcard-6">
-                  <label for="sel-color-prodyctcard-6" style="color: #D5C4AA"></label>
+                  <label for="sel-color-prodyctcard-6" style="color: #D5C4AA" data-text="Натур"></label>
                 </div>
               </div>
             </div>
@@ -1718,7 +1722,7 @@
 
                 <input type="radio" name="select-width-productcard" id="input-select-productcard-3" required>
                 <label for="input-select-productcard-3">
-                  <span>5 м</span>
+                  <span>6 м</span>
                 </label>
 
                 <input type="radio" name="select-width-productcard" id="input-select-productcard-5" required>
@@ -1735,7 +1739,7 @@
 
             <div class="label-title-info">
               <h4>Вес м.п/кг:</h4>
-              <span>2,2 кг</span>
+              <span>2,5 кг</span>
             </div>
 
             <div class="label-title-info">
@@ -1785,7 +1789,7 @@
 
             <div class="productcard__footer">
               <em>
-                <b>1 500</b>
+                <b>1 550</b>
                 ₽/м2
               </em>
 
@@ -1824,32 +1828,32 @@
                 <div class="select-color select-color--horz">
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard"  class="js__change-imgprod" value="venge.jpg" id="sel-color-prodyctcard2-1" checked>
-                    <label for="sel-color-prodyctcard2-1" style="color: #362827"></label>
+                    <label for="sel-color-prodyctcard2-1" style="color: #362827" data-text="Венге"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="chocolate.jpg" id="sel-color-prodyctcard2-2">
-                    <label for="sel-color-prodyctcard2-2" style="color: #592301"></label>
+                    <label for="sel-color-prodyctcard2-2" style="color: #592301" data-text="Шоколад"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="silver.jpg" id="sel-color-prodyctcard2-3">
-                    <label for="sel-color-prodyctcard2-3" style="color: #838582"></label>
+                    <label for="sel-color-prodyctcard2-3" style="color: #838582" data-text="Серый"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="black.jpg" id="sel-color-prodyctcard2-4">
-                    <label for="sel-color-prodyctcard2-4" style="color: #000000"></label>
+                    <label for="sel-color-prodyctcard2-4" style="color: #000000" data-text="Черный"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="terakot.jpg" id="sel-color-prodyctcard2-5">
-                    <label for="sel-color-prodyctcard2-5" style="color: #CC633C"></label>
+                    <label for="sel-color-prodyctcard2-5" style="color: #CC633C" data-text="Терракот"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="natur.jpg" id="sel-color-prodyctcard2-6">
-                    <label for="sel-color-prodyctcard2-6" style="color: #D5C4AA"></label>
+                    <label for="sel-color-prodyctcard2-6" style="color: #D5C4AA" data-text="Натур"></label>
                   </div>
                 </div>
               </div>
@@ -1870,7 +1874,7 @@
 
                   <input type="radio" name="select-width-productcard" id="input-select-productcard2-3" required>
                   <label for="input-select-productcard2-3">
-                    <span>5 м</span>
+                    <span>6 м</span>
                   </label>
 
                   <input type="radio" name="select-width-productcard" id="input-select-productcard2-5" required>
@@ -1976,32 +1980,32 @@
                 <div class="select-color select-color--horz">
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard"  class="js__change-imgprod" value="venge.jpg" id="sel-color-prodyctcard3-1" checked>
-                    <label for="sel-color-prodyctcard3-1" style="color: #362827"></label>
+                    <label for="sel-color-prodyctcard3-1" style="color: #362827" data-text="Венге"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="chocolate.jpg" id="sel-color-prodyctcard3-2">
-                    <label for="sel-color-prodyctcard3-2" style="color: #592301"></label>
+                    <label for="sel-color-prodyctcard3-2" style="color: #592301" data-text="Шоколад"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="silver.jpg" id="sel-color-prodyctcard3-3">
-                    <label for="sel-color-prodyctcard3-3" style="color: #838582"></label>
+                    <label for="sel-color-prodyctcard3-3" style="color: #838582" data-text="Серый"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="black.jpg" id="sel-color-prodyctcard3-4">
-                    <label for="sel-color-prodyctcard3-4" style="color: #000000"></label>
+                    <label for="sel-color-prodyctcard3-4" style="color: #000000" data-text="Черный"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="terakot.jpg" id="sel-color-prodyctcard3-5">
-                    <label for="sel-color-prodyctcard3-5" style="color: #CC633C"></label>
+                    <label for="sel-color-prodyctcard3-5" style="color: #CC633C" data-text="Терракот"></label>
                   </div>
 
                   <div class="select-color__item">
                     <input type="radio" name="sel-color-productcard" class="js__change-imgprod" value="natur.jpg" id="sel-color-prodyctcard3-6">
-                    <label for="sel-color-prodyctcard3-6" style="color: #D5C4AA"></label>
+                    <label for="sel-color-prodyctcard3-6" style="color: #D5C4AA" data-text="Натур"></label>
                   </div>
                 </div>
               </div>
@@ -2022,7 +2026,7 @@
 
                   <input type="radio" name="select-width-productcard" id="input-select-productcard3-3" required>
                   <label for="input-select-productcard3-3">
-                    <span>5 м</span>
+                    <span>6 м</span>
                   </label>
 
                   <input type="radio" name="select-width-productcard" id="input-select-productcard3-5" required>
@@ -2034,12 +2038,12 @@
 
               <div class="label-title-info">
                 <h4>Размер профиля:</h4>
-                <span>136х25  мм</span>
+                <span>136х25 мм</span>
               </div>
 
               <div class="label-title-info">
                 <h4>Вес м.п/кг:</h4>
-                <span>2,0 кг</span>
+                <span>2,2 кг</span>
               </div>
 
               <div class="label-title-info">
@@ -2089,7 +2093,7 @@
 
               <div class="productcard__footer">
                 <em>
-                  <b>1 115р</b>
+                  <b>1 500р</b>
                   ₽/м2
                 </em>
 
