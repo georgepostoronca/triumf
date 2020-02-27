@@ -178,7 +178,12 @@ $.validator.setDefaults({
 				// processData: false,
 				// contentType: false,
 				success: function() {
-					console.log("awd")
+					$(item).trigger("reset");
+					$.fancybox.close();
+					$.fancybox.open({
+						src  : '#popup-success',
+						type : 'inline'
+					});
 				},
 				error: function(e) {
 					console.log("Error: " + e)
