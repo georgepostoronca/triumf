@@ -947,7 +947,7 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
 #up {
     width: 64px;
     height: 64px;
-    border: 1px solid #F2ECE4;
+    // border: 1px solid #F2ECE4;
     box-sizing: border-box;
     border-radius: 100%;
     display: flex;
@@ -961,6 +961,8 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
     cursor: pointer;
     transition: .2s;
 
+    background-color: $orange;
+
     @media(max-width: 768px) {
         width: 40px;
         height: 40px;
@@ -971,7 +973,8 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
         border-color: $orange;
         
         svg {
-            fill: #fff;
+            // fill: #fff;
+            fill: #000;
         }
     }
     
@@ -981,6 +984,8 @@ input[type="text"], input[type="phone"], input[type="number"], input[type="email
         height: 21px;
         fill: $orange;
         transform: rotate(-90deg);
+
+        fill: #fff;
 
         @media(max-width: 768px) {
             width: 6px;

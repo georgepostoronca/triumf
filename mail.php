@@ -1,6 +1,6 @@
 <?php
 if($_POST['form-title']) {
-    $to  = "test@gmail.com";
+    $to  = "info@triumfdpk.ru";
     $subject = $_POST['form-title'];
     $result = "";
 

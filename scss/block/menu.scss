@@ -14,13 +14,15 @@
         position: relative;
     
         @media(max-width: 992px) {
-            padding-top: 15px;
-            padding-bottom: 15px;
+            // padding-top: 15px;
+            // padding-bottom: 15px;
+            padding-top: 6px;
+            padding-bottom: 6px;
         }
 
         @media(max-width: 480px) {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            // padding-top: 10px;
+            // padding-bottom: 10px;
         }
 
         display: flex;
@@ -41,13 +43,16 @@
             height: 95px;
 
             @media(max-width: 992px) {
-                width: 80px;
-                height: 57px;
+                // width: 80px;
+                // height: 57px;
+
+                width: 45px;
+                height: 34px;
             }
 
             @media(max-width: 480px) {
-                width: 60px;
-                height: 43px;
+                // width: 60px;
+                // height: 43px;
             }
         }
     }
@@ -160,6 +165,7 @@
                 @media(max-width: 992px) {
                     padding: 10px 5px;
                     font-size: 12px;
+                    padding: 5px;
                 }
             }
 
@@ -199,6 +205,7 @@
                 opacity: 1;
                 visibility: visible;
                 transform: translateY(0px);
+                box-shadow: 0 0 10px rgba(#000, .2);
             }
 
             &:after {
@@ -279,6 +286,7 @@
 
         @media(max-width: 992px) {
             display: block;
+            height: 18px;
         }
 
         &.active {
@@ -316,6 +324,10 @@
             background: $orange;
             position: absolute;
             transition: .2s;
+
+            @media(max-width: 992px) {
+                height: 2px;
+            }
         }
         
         span {
