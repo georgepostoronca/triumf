@@ -405,6 +405,30 @@
 
     }
 
+    &__inputs {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        display: none;
+        flex-wrap: wrap;
+
+        .input-block {
+            width: calc(50% - 20px);
+            margin-bottom: 0;
+        }
+
+        &-btn {
+            width: 100%;
+            button {
+                margin-top: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
     &__footer {
         display: flex;
         align-items: center;

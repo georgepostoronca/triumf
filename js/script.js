@@ -458,7 +458,7 @@ $(".js__change-img").on("change", function() {
 });
 
 $(".js__change-imgprod").on("change", function() {
-	$(this).closest(".popup__container").find(".js__change-block-prod").attr("src", "img/color/" + $(this).val());
+	$(this).closest(".popup__container").find(".js__change-block-prod").attr("src", "img/color/" + $(this).data("src"));
 });
 
 
@@ -503,5 +503,10 @@ $(".js__calc-select-size input").on("change", function() {
 	// $(".js__calc-input-size input").eq($(this).index()).prop("checked", true);
 	// $(".js__calc-input-size label").eq($(this).index()).show();
 	// $(".js__calc-input-size .other").show();
-	$(".js__calc-input-size > span").text($(this).val());
+	$(".js__calc-input-size > span").text($(this).data("val"));
+	$(".js__calc-input-size > input").val($(this).data("val"));
 })
+
+$(".js__oepn-dop-input").click(function() {
+	$(".productcard__inputs").fadeIn().css("display", "flex");
+});
